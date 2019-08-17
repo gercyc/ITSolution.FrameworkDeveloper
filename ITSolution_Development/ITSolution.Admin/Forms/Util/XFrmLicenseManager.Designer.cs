@@ -64,7 +64,7 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.dtEndDate = new DevExpress.XtraEditors.DateEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.lookUpCliFor1 = new ITE.Components.LookUp.LookUpCliFor();
+            //this.lookUpCliFor1 = new ITE.Components.LookUp.LookUpCliFor();
             this.dtStartDate = new DevExpress.XtraEditors.DateEdit();
             this.colLicenseStatus = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
@@ -298,7 +298,7 @@
             this.panel1.Controls.Add(this.labelControl2);
             this.panel1.Controls.Add(this.dtEndDate);
             this.panel1.Controls.Add(this.labelControl1);
-            this.panel1.Controls.Add(this.lookUpCliFor1);
+            //this.panel1.Controls.Add(this.lookUpCliFor1);
             this.panel1.Controls.Add(this.dtStartDate);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(374, 30);
@@ -424,14 +424,14 @@
             // 
             // lookUpCliFor1
             // 
-            this.lookUpCliFor1.CliFor = null;
-            this.lookUpCliFor1.Filial = null;
-            this.lookUpCliFor1.LabelText = "Cliente/Fornecedor:";
-            this.lookUpCliFor1.Location = new System.Drawing.Point(13, 10);
-            this.lookUpCliFor1.Matriz = null;
-            this.lookUpCliFor1.Name = "lookUpCliFor1";
-            this.lookUpCliFor1.Size = new System.Drawing.Size(380, 48);
-            this.lookUpCliFor1.TabIndex = 0;
+            //this.lookUpCliFor1.CliFor = null;
+            //this.lookUpCliFor1.Filial = null;
+            //this.lookUpCliFor1.LabelText = "Cliente/Fornecedor:";
+            //this.lookUpCliFor1.Location = new System.Drawing.Point(13, 10);
+            //this.lookUpCliFor1.Matriz = null;
+            //this.lookUpCliFor1.Name = "lookUpCliFor1";
+            //this.lookUpCliFor1.Size = new System.Drawing.Size(380, 48);
+            //this.lookUpCliFor1.TabIndex = 0;
             // 
             // dtStartDate
             // 
@@ -513,7 +513,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.DateEdit dtEndDate;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private ITE.Components.LookUp.LookUpCliFor lookUpCliFor1;
+        //private ITE.Components.LookUp.LookUpCliFor lookUpCliFor1;
         private DevExpress.XtraEditors.DateEdit dtStartDate;
         private System.Windows.Forms.BindingSource itsMenuBindingSource;
         private DevExpress.XtraGrid.Columns.GridColumn colIdMenu;

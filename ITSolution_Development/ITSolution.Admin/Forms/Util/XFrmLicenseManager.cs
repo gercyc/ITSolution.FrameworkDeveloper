@@ -82,26 +82,26 @@ namespace ITSolution.Admin.Forms.Util
 
             var cliFor = new ITE.Entidades.POCO.CliFor()
             {
-                IdCliFor = lookUpCliFor1.CliFor.IdCliFor,
-                RazaoSocial = lookUpCliFor1.CliFor.RazaoSocial,
-                CpfCnpj = lookUpCliFor1.CliFor.CpfCnpj,
-                NomeEndereco = lookUpCliFor1.CliFor.NomeEndereco,
-                NumeroEndereco = lookUpCliFor1.CliFor.NumeroEndereco,
-                TipoEndereco = lookUpCliFor1.CliFor.TipoEndereco,
-                Complemento = lookUpCliFor1.CliFor.Complemento,
-                Bairro = lookUpCliFor1.CliFor.Bairro,
-                Cep = lookUpCliFor1.CliFor.Cep,
-                Cidade = lookUpCliFor1.CliFor.Cidade,
-                Classificacao = lookUpCliFor1.CliFor.Classificacao,
-                Email = lookUpCliFor1.CliFor.Email,
-                InscricaoEstadual = lookUpCliFor1.CliFor.InscricaoEstadual,
-                InscricaoMunicipal = lookUpCliFor1.CliFor.InscricaoMunicipal,
-                Uf = lookUpCliFor1.CliFor.Uf,
-                Celular = lookUpCliFor1.CliFor.Celular,
-                NomeFantasia = lookUpCliFor1.CliFor.NomeFantasia,
-                NaturezaJuridica = lookUpCliFor1.CliFor.NaturezaJuridica,
-                RG = lookUpCliFor1.CliFor.RG,
-                Pais = lookUpCliFor1.CliFor.Pais
+                //IdCliFor = lookUpCliFor1.CliFor.IdCliFor,
+                //RazaoSocial = lookUpCliFor1.CliFor.RazaoSocial,
+                //CpfCnpj = lookUpCliFor1.CliFor.CpfCnpj,
+                //NomeEndereco = lookUpCliFor1.CliFor.NomeEndereco,
+                //NumeroEndereco = lookUpCliFor1.CliFor.NumeroEndereco,
+                //TipoEndereco = lookUpCliFor1.CliFor.TipoEndereco,
+                //Complemento = lookUpCliFor1.CliFor.Complemento,
+                //Bairro = lookUpCliFor1.CliFor.Bairro,
+                //Cep = lookUpCliFor1.CliFor.Cep,
+                //Cidade = lookUpCliFor1.CliFor.Cidade,
+                //Classificacao = lookUpCliFor1.CliFor.Classificacao,
+                //Email = lookUpCliFor1.CliFor.Email,
+                //InscricaoEstadual = lookUpCliFor1.CliFor.InscricaoEstadual,
+                //InscricaoMunicipal = lookUpCliFor1.CliFor.InscricaoMunicipal,
+                //Uf = lookUpCliFor1.CliFor.Uf,
+                //Celular = lookUpCliFor1.CliFor.Celular,
+                //NomeFantasia = lookUpCliFor1.CliFor.NomeFantasia,
+                //NaturezaJuridica = lookUpCliFor1.CliFor.NaturezaJuridica,
+                //RG = lookUpCliFor1.CliFor.RG,
+                //Pais = lookUpCliFor1.CliFor.Pais
             };
 
             var startDate = dtStartDate.DateTime;
@@ -165,7 +165,7 @@ namespace ITSolution.Admin.Forms.Util
                 var endDate = licData.DataFimLic;
                 var activeMenus = licData.ActiveMenus;
 
-                lookUpCliFor1.FindSetCliFor(clifor.IdCliFor.ToString());
+                //lookUpCliFor1.FindSetCliFor(clifor.IdCliFor.ToString());
                 dtStartDate.DateTime = startDate;
                 dtEndDate.DateTime = endDate;
                 gridControlMenusAct.DataSource = activeMenus;
@@ -176,9 +176,9 @@ namespace ITSolution.Admin.Forms.Util
         private void btnNewLicense_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             this._selectedLicense = new ItsLicense();
-            lookUpCliFor1.CliFor = null;
-            lookUpCliFor1.LabelText = "";
-            lookUpCliFor1.TextCodCliFor.Text = "";
+            //lookUpCliFor1.CliFor = null;
+            //lookUpCliFor1.LabelText = "";
+            //lookUpCliFor1.TextCodCliFor.Text = "";
             dtStartDate.Text = "";
             dtEndDate.Text = "";
         }

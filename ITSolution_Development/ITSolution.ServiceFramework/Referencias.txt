@@ -1,0 +1,3 @@
+﻿https://msdn.microsoft.com/pt-br/library/ms733069(v=vs.110).aspx
+
+Criado um aplicativo windows forms para permitir iniciar o servico sem precisar instalar nos services do windows

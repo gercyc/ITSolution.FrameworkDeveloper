@@ -1,0 +1,36 @@
+﻿ Informativo Util
+ Standard Format  - Utilização
+C  - Exibe o valor no formato de moeda.
+D  - Exibe o valor em formato decimal.
+E  - Exibe o valor no formato cientìfico (exponencial).
+F  - Exibe o valor no formato fixo.
+G  - Exibe o valor no formato geral.
+N  - Exibe o valor no formato numérico.
+P  - Exibe o valor no formato de porcentagem.
+
+//Mesmo criterio para todos os anteriores
+//Nao eh case sensitive
+Console.WriteLine(String.Format("Value: {0:P2}.", 20));
+Value: 20,00%.
+Console.WriteLine("Your account balance is {0:C2}.", value);
+O Especificador Personalizado "#"
+
+String.Format("Value: {0:P2}.", 0.8526) // formats as 85.26 % (varies by culture)
+
+O especificador de formato personalizado “# " funciona como um símbolo de espaço reservado de dígito. 
+Se o valor que está sendo formatado possui um dígito na posição onde o símbolo "#" aparece na cadeia de 
+caracteres de formato, esse dígito é copiado para a cadeia de caracteres de resultado. 
+ contrário, nada é armazenado nessa posição na cadeia de caracteres de resultado.
+
+Observe que esse especificador nunca exibe um zero que não seja um dígito significativo, mesmo se o zero 
+é o único dígito na cadeia de caracteres. Ele exibirá zero somente se ele for um dígito significativo
+ no número que está sendo exibido.
+
+A cadeia de caracteres de formato "##" faz com que o valor seja arredondado para o dígito mais próximo
+ anterior ao decimal, onde o arredondamento para cima sempre é usado. Por exemplo, a formatação de 34,5 
+ com "##" resultaria no valor 35.
+
+O exemplo a seguir mostra vários valores formatados com cadeias de caracteres de formato personalizado 
+que incluem espaços reservados de dígito. 
+
+http://www.csharp-examples.net/string-format-double/

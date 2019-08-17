@@ -1,0 +1,179 @@
+﻿--mata todos os msbuild
+taskkill -f -IM  MSBUILD.exe
+
+[NotMapped] Anotação faz com que uma classe nao exista no banco somente na classe
+[Obsolete("")] Anotaçã para avisar o metodo que foi descontinuado
+
+//Redirecionamento de foco em campo de text
+//this.ActiveControl = yourtextbox
+http://stackoverflow.com/questions/6597196/how-to-put-focus-on-textbox-when-the-form-load
+
+GUI significa graphical user interface.
+É uma interface gráfica q apresenta ao usuário um mecanismo amigável 
+para interagir com um aplicativo. 
+
+Use Dispose e não Close
+O Dispose é um padrão implementado na plataforma .NET para destruição de objetos.
+
+Dentro do Dispose, existem uma série de regras baseado em cada classe, 
+que implementa a destruição do objeto, geralmente, o método Close é chamado dentro do Dispose também, por isso quando você chama o Dispose ele também executa o Close.
+
+Outra vantagem nesse modelo é que ele tem uma sintaxe particular para destruição no C#
+
+
+//Redirecionamento de foco em campo de text
+//this.ActiveControl = yourtextbox
+http://stackoverflow.com/questions/6597196/how-to-put-focus-on-textbox-when-the-form-load
+
+
+Pintar
+AppearanceDropDown muda o tamanho da fonte exibida dentro do componente exemplo combobox
+
+Use Dispose e não Close
+O Dispose é um padrão implementado na plataforma .NET para destruição de objetos.
+
+Dentro do Dispose, existem uma série de regras baseado em cada classe, 
+que implementa a destruição do objeto, geralmente, o método Close é chamado dentro do Dispose também, por isso quando você chama o Dispose ele também executa o Close.
+
+Outra vantagem nesse modelo é que ele tem uma sintaxe particular para destruição no C#
+
+Exemplo
+
+using( ... ))
+{
+
+}
+
+Perceba que, a sintaxe do using permite um tratamento automático do gerenciamento 
+do estado do objeto em questão de liberação do recurso, facilitando a vida do 
+mecanismo de Garbage Collector e também faz a alegria do desenvolvedor que não precisa 
+mais a todo momento criar try/finally para este tratamento específico.
+
+Vale lembrar que, ele só permite que classe que implementem a interface IDisposable 
+utilizem desta sintaxe, no caso, classes de conexão com base de dados e muitas 
+outras classes do .net framework ja vem com a implementação desta interface.
+
+//base https://social.msdn.microsoft.com/Forums/pt-BR/d6b5505e-c7b1-4868-a3d2-249c3ee37dc1/diferena-entre-dispose-e-close?forum=vscsharppt
+
+
+//LINQ 
+
+https://msdn.microsoft.com/pt-br/library/jj128159.aspx
+
+
+//Atalhos
+
+Altere a propriedade KeyPreview do form para true 
+Escreva o seguinte código no evento KeyDown do form:
+
+if (e.KeyCode == Keys.F5)
+{
+    //acao desejada
+}
+
+ //Escreve os comandos SQL no output.
+ctx.Database.Log = Console.WriteLine;
+
+
+ 
+//LINQ 
+
+https://msdn.microsoft.com/pt-br/library/jj128159.aspx
+
+
+//Card view
+
+https://documentation.devexpress.com/#windowsforms/CustomDocument2163
+
+//Join no EF
+
+var ctx = FluxoCaixaContext.Instance;
+
+            var id = 1;
+            var query =
+               from cc in ctx.CentrosCustos
+               join sc in ctx.ContasCustos on cc.IdCentroCusto equals sc.IdCentroCusto
+               where cc.IdCentroCusto == id
+               select new { Centros = cc, Contas = sc };
+
+            foreach (var item in query)
+            {
+                Console.WriteLine(item);            
+			}
+
+
+    /**Combinacao de teclas 
+     * https://msdn.microsoft.com/pt-br/library/system.windows.forms.keyeventargs%28v=vs.110%29.aspx
+    private void textBox1_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
+{
+	 if (e.KeyCode == Keys.F4 && e.Modifiers == Keys.Control)
+
+    // Determine whether the key entered is the F1 key. If it is, display Help.
+    if(e.KeyCode == Keys.F1 && (e.Alt || e.Control || e.Shift))
+    {
+        // Display a pop-up Help topic to assist the user.
+        Help.ShowPopup(textBox1, "Enter your name.", new Point(textBox1.Bottom, textBox1.Right));
+    }
+    else if(e.KeyCode == Keys.F2 && e.Modifiers == Keys.Alt)
+    {
+        // Display a pop-up Help topic to provide additional assistance to the user.
+        Help.ShowPopup(textBox1, "Enter your first name followed by your last name. Middle name is optional.",
+            new Point(textBox1.Top, this.textBox1.Left));
+    }
+}*/
+
+
+
+//resete o filtro do grid depois de adicionar produto encontrado
+this.gridViewProdutos.ApplyFindFilter(String.Empty);
+
+Note DevExpress  
+Form Title Bar Skinning
+When a Windows Aero scheme is applied (in Windows Vista, for instance), 
+the title bar skinning feature is not applied to RibbonForms 
+unless the RibbonForm.AllowFormGlass option is set to False.
+
+
+comp.Properties.Items.AddRange(Enum.GetValues(typeof(TypeRecebimento))); 
+
+
+
+--LAMBDA LIKE
+using System.Data.Linq.SqlClient;
+...
+customers.where(c=>SqlMethods.Like(c.Name, "john"));
+
+PanelControl
+Your assumption is correct: the skin overrides the Appearance.BackColor property.
+
+
+To change the back color, you'll need to set the PanelControl's LookAndFeel.Style property to Flat or UltraFlat, and the LookAndFeel.UseWindowsXpTheme property to False. This will turn off skinning for the control, and instead use the appearance settings that you provide.
+
+    Stefan Kross
+    5 years ago
+
+    Hi Brendon,
+    thanks for the tip. But it is really not so easy. Why not implement LookAndFeelStyle.NoSkin?
+
+                panelInfo.Appearance.BackColor = Color.Red;
+                panelInfo.Appearance.BackColor2 = Color.Red;
+                panelInfo.Appearance.Options.UseBackColor = true;
+
+                panelInfo.LookAndFeel.UseDefaultLookAndFeel = false;
+                panelInfo.LookAndFeel.Style = LookAndFeelStyle.Flat;
+    Best wishes, Alex
+
+
+Foco em barEditItem
+	
+     
+	this.barItem.Links.Add(this.barItem, true);
+	if (this.barItem.Links.Count > 0)
+		this.barItem.Links[0].Focus();
+
+//nao testado
+BarEditItemLink link = barSearchControl1.Links[0] as BarEditItemLink;
+link.ShowEditor();
+
+
+        

@@ -1,0 +1,95 @@
+using ITSolution.Framework.Dao.Contexto;
+using ITSolution.Framework.Dao.Repositorio.Base;
+using System.Configuration;
+using System.Data.Entity;
+using System.Data.Entity.SqlServer;
+
+namespace Repositorio
+{
+    /// <summary>
+    /// Introdução do padrão Singleton
+    /// Controle do banco de dados.
+    /// DDL - Data Definition Language 
+    /// Comandos do tipo DDL: CREATE, ALTER ou DROP
+    /// Usandos na criação dos objeto: tabelas, procedures, índices, relacionamentos etc.
+    /// 
+    /// DML - Data Manipulation Language
+    /// Comandos dos tipos DML SELECT, INSERT, UPDATE e DELETE. 
+    /// Usandos para manipular os dados.
+    /// 
+    /// Data Control Language (DCL). Os comandos GRANT e REVOKE.
+    /// 
+    /// </summary>
+    public class Contexto : DbContextIts
+    {
+		
+		//Cada chamada estatica que realiza inicializaca dos ctx caso precise ou não 
+		/// <summary>
+        /// Instancia estatica do contexto
+        /// </summary>
+        public static Contexto Instance { get { return new Contexto(); } }		
+		
+        #region Propriedades de controle de persistência
+
+		private Dao<T> tDao;
+        #endregion Propriedades de controle de persistência
+		
+		#region Construtores
+	
+            /// <summary>
+        /// Cria esse banco de dados se ele nao existir
+        /// </summary>
+        /// <param colName="connectionStringOrDataBase"></param>
+        /// <param name="connectionStringOrDataBase"></param>
+        /// <param name="typeConnection"></param>
+        public Contexto(string connectionStringOrDataBase, TypeConnection typeConnection= TypeConnection.SqlServer)
+            : base (connectionStringOrDataBase)
+        {
+            //impedir que o EF trunque os valores decimais > 2 casas
+            SqlProviderServices.TruncateDecimalsToScale = false;
+        
+			//init dao 
+			this.tDao = new Dao<T>(this);
+        }
+       
+		public Contexto() : this(ConfigurationManager.ConnectionStrings["ConnectionStringName"].ConnectionString)
+        {
+                  
+        } 
+		
+		       /// <summary>
+        /// true => Entidades com marcação virtual são carregadas\n
+        /// false => Entidades com marcação virtual nao serão carregadas
+        /// </summary>
+        /// <param name="enabled"></param>
+        public void LazyLoading(bool enabled)
+        {
+            base.Configuration.LazyLoadingEnabled = enabled;
+        }
+
+
+		#endregion Fim dos construtores
+		
+     
+		/* Metodo de declaração de string de conexao
+		#region String de conexao        
+		//String de conexão
+        //private static string ConnectionString = Properties.Settings.Default.ConnectionString;
+        private static string ConnectionString = ConfigurationManager.ConnectionStrings["Balcao"].ConnectionString;        
+		#endregion String de conexao
+		*/
+
+
+		#region Propriedades de controle de persistencia
+		
+		public Dao<T> TDao { get { return tDao; }  }
+        #endregion Propriedades de controle de persistencia
+		
+		#region Entidades que devem ser explicítas para criação das tabelas e controle de consultas
+
+        public virtual DbSet<T> TEntity { get; set; }
+        #endregion Entidades que devem ser explicítas para criação das tabelas e controle de consultas
+
+    }
+}
+

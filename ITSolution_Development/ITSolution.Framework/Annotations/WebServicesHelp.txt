@@ -1,0 +1,11 @@
+﻿"Não foi possível localizar o elemento de ponto de extremidade com nome 'AtendeClientePort' 
+e contrato 'WSCorreiosCep.AtendeCliente' na seção de configuração do ServiceModel cliente. 
+Isso pode ter ocorrido devido à falta de um arquivo de configuração para o seu aplicativo 
+ou porque nenhum elemento de ponto de extremidade correspondendo a este nome pôde 
+ser encontrado no elemento cliente.
+
+Correção:
+Quando você referencia um web service por um Class Library,  
+você deve copiar o arquivo AppConfig de seu projeto web para seu class library e vai funcionar.
+
+Copie toda a parte gerada quando adicionar o WebService

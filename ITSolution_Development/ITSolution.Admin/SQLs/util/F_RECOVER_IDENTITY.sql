@@ -1,0 +1,10 @@
+﻿CREATE FUNCTION dbo.P_RECOVERY_IDENTITY ( @P_TABLE_NAME VARCHAR(200))
+  RETURNS INT
+AS 
+  BEGIN
+    DECLARE @v_value  INT = 1
+    SET @v_value = (SELECT MAX($IDENTITY) FROM sys.tables t WHERE t.name =@P_TABLE_NAME)
+
+    RETURN @v_value
+
+  END 

@@ -1,0 +1,24 @@
+﻿--Gerar pacote
+ALTER TABLE CliFor
+ADD Pais VARCHAR(50) NULL
+GO
+
+ALTER TABLE EnderecoCliFor
+ADD Pais VARCHAR(50) NULL 
+GO
+
+ALTER TABLE EmpresaMatriz
+ADD Pais VARCHAR(50) NULL 
+GO
+
+ALTER TABLE EmpresaFilial
+ADD Pais VARCHAR(50) NULL 
+GO
+
+ALTER TABLE Funcionario
+ADD Pais VARCHAR(50) NULL 
+GO
+
+ALTER TABLE Atendimento
+ADD Pais VARCHAR(50) NULL
+GO

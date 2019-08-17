@@ -1,0 +1,33 @@
+﻿using System;
+
+namespace ContextExample
+{
+    public sealed class ContextExample
+    {
+        private static volatile ContextExample instance;
+        private static object syncRoot = new Object();
+
+        private ContextExample() { 
+		}
+
+        public static ContextExample Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    lock (syncRoot)
+                    {
+                        if (instance == null)
+                        {
+                            instance = new ContextExample();
+                        }
+                    }
+                }
+                return instance;
+            }
+        }
+
+        //public Dao<Cliente> ClienteDao = new Dao<Cliente>(Properties.Settings.Default.Conexao);
+    }
+}

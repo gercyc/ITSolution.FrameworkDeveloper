@@ -1,0 +1,10 @@
+﻿CREATE PROCEDURE dbo.P_DELETE_PRODUCAO_MES_DIA_ANO (@P_MES INT, @P_DIA INT, @P_ANO INT)
+AS
+
+  DELETE FROM ProducaoSerra
+  WHERE DATEPART(MONTH, DataProducao) = @P_MES
+    AND DATEPART(DAY, DataProducao) = @P_DIA
+    AND DATEPART(YEAR, DataProducao) = @P_ANO
+
+  
+GO

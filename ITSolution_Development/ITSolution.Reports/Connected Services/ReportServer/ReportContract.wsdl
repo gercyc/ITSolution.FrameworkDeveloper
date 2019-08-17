@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://schemas.microsoft.com/ws/2005/02/mex/bindings" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ReportContract" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://schemas.microsoft.com/ws/2005/02/mex/bindings" location="http://localhost:9090/reports?wsdl=wsdl0" />
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:9090/reports?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:9090/reports?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:9090/reports?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ITSolution.Reports.Entidades" />
+      <xsd:import schemaLocation="http://localhost:9090/reports?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IReportContract_PrintReportCustomById_InputMessage">
+    <wsdl:part name="parameters" element="tns:PrintReportCustomById" />
+  </wsdl:message>
+  <wsdl:message name="IReportContract_PrintReportCustomById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PrintReportCustomByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReportContract_PrintReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:PrintReport" />
+  </wsdl:message>
+  <wsdl:message name="IReportContract_PrintReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PrintReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReportContract_ShowReportList_InputMessage">
+    <wsdl:part name="parameters" element="tns:ShowReportList" />
+  </wsdl:message>
+  <wsdl:message name="IReportContract_ShowReportList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ShowReportListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReportContract_GetAllReports_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllReports" />
+  </wsdl:message>
+  <wsdl:message name="IReportContract_GetAllReports_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllReportsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReportContract_GetReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReport" />
+  </wsdl:message>
+  <wsdl:message name="IReportContract_GetReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IReportContract">
+    <wsdl:operation name="PrintReportCustomById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReportContract/PrintReportCustomById" message="tns:IReportContract_PrintReportCustomById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReportContract/PrintReportCustomByIdResponse" message="tns:IReportContract_PrintReportCustomById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PrintReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReportContract/PrintReport" message="tns:IReportContract_PrintReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReportContract/PrintReportResponse" message="tns:IReportContract_PrintReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ShowReportList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReportContract/ShowReportList" message="tns:IReportContract_ShowReportList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReportContract/ShowReportListResponse" message="tns:IReportContract_ShowReportList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllReports">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReportContract/GetAllReports" message="tns:IReportContract_GetAllReports_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReportContract/GetAllReportsResponse" message="tns:IReportContract_GetAllReports_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReportContract/GetReport" message="tns:IReportContract_GetReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReportContract/GetReportResponse" message="tns:IReportContract_GetReport_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IReportContract" type="tns:IReportContract">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PrintReportCustomById">
+      <soap:operation soapAction="http://tempuri.org/IReportContract/PrintReportCustomById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrintReport">
+      <soap:operation soapAction="http://tempuri.org/IReportContract/PrintReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShowReportList">
+      <soap:operation soapAction="http://tempuri.org/IReportContract/ShowReportList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllReports">
+      <soap:operation soapAction="http://tempuri.org/IReportContract/GetAllReports" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReport">
+      <soap:operation soapAction="http://tempuri.org/IReportContract/GetReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ReportContract">
+    <wsdl:port name="BasicHttpBinding_IReportContract" binding="tns:BasicHttpBinding_IReportContract">
+      <soap:address location="http://localhost:9090/reports/ReportService" />
+    </wsdl:port>
+    <wsdl:port name="MetadataExchangeHttpBinding_IReportContract" binding="i0:MetadataExchangeHttpBinding_IReportContract">
+      <soap12:address location="http://localhost:9090/reports/ReportServiceWSDL" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost:9090/reports/ReportServiceWSDL</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

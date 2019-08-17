@@ -1,0 +1,44 @@
+﻿--DROP O USUARIO SE ELE EXISTIR
+IF EXISTS (SELECT
+    *
+  FROM sys.sysusers s
+  WHERE s.name LIKE '%its%')
+BEGIN
+
+  DROP LOGIN its
+
+END
+GO
+
+--DROP O LOGIN SE ELE EXSTIR
+--SELECT * FROM 
+DECLARE @logins TABLE (
+  UserName NVARCHAR(66),
+  RoleName NVARCHAR(20),
+  LoginName NVARCHAR(66),
+  DefDBName NVARCHAR(12),
+  DefSchemaName NVARCHAR(46),
+  UserID CHAR(10),
+  SID VARBINARY(85)
+);
+INSERT @logins EXEC sys.sp_helpuser
+
+IF EXISTS (SELECT
+    s.UserName
+  FROM @logins s
+
+  WHERE s.LoginName LIKE '%its%')
+BEGIN
+
+  DROP LOGIN its
+
+END
+GO
+
+--cria o login "its"
+CREATE LOGIN its WITH PASSWORD = 'its1234'
+GO
+--cria o usuario "its"
+CREATE USER its FROM LOGIN its;
+GO
+GRANT CREATE DATABASE, CREATE TABLE, SELECT, UPDATE, INSERT, DELETE TO its WITH GRANT OPTION;

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <!-- Tipo de Conexão-->
+  <serverType typeName="MSSQL" />
+  <defaultConnection name="Dev" />
+  <connectionStrings>
+    <!--Azure Database to Developer-->
+    <connection name="ITS" serverName="itsolution.database.windows.net" database="db_ITE" user="itsadmin" password="SXRzMTIzNCU=" security="false" />
+    <!--Azure Database to Developer-->
+    <connection name="Dev" serverName="(local)" database="dbBalcao_DEV" security="true" />
+  </connectionStrings>
+</configuration>

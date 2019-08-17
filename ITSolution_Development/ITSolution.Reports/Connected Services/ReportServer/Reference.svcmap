@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0fc3214c-7409-4b97-846e-80431da66e1a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:9090/reports" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="reports.disco" MetadataType="Disco" ID="09459d4b-fd5e-4712-97b1-68e00334a33d" SourceId="1" SourceUrl="http://localhost:9090/reports?disco" />
+    <MetadataFile FileName="ReportContract.wsdl" MetadataType="Wsdl" ID="9a90f1da-c587-45d1-8f4d-f32b4f42b9ee" SourceId="1" SourceUrl="http://localhost:9090/reports?wsdl" />
+    <MetadataFile FileName="reports.xsd" MetadataType="Schema" ID="45445d09-dc91-44e1-9e2a-4a9dc1aa8459" SourceId="1" SourceUrl="http://localhost:9090/reports?xsd=xsd0" />
+    <MetadataFile FileName="reports1.xsd" MetadataType="Schema" ID="6ef0edc1-4c95-4931-997c-4b2321f903bb" SourceId="1" SourceUrl="http://localhost:9090/reports?xsd=xsd1" />
+    <MetadataFile FileName="reports2.xsd" MetadataType="Schema" ID="8b0511d9-b332-4afd-937c-f059db2675b2" SourceId="1" SourceUrl="http://localhost:9090/reports?xsd=xsd2" />
+    <MetadataFile FileName="reports21.xsd" MetadataType="Schema" ID="837b4f2f-410d-425d-9907-2feb551fb2ab" SourceId="1" SourceUrl="http://localhost:9090/reports?xsd=xsd3" />
+    <MetadataFile FileName="reports.wsdl" MetadataType="Wsdl" ID="c0f95ee4-5f5e-406b-954e-9bd2f195b309" SourceId="1" SourceUrl="http://localhost:9090/reports?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

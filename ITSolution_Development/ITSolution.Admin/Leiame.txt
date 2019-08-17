@@ -1,0 +1,12 @@
+﻿aplicar pacote 4 no cliente.
+1 - Publicar o pacote
+	-> Atualizar dtPublicacao, publicar o PDF com as informações.
+	-> Gerar o arquivo (serializar) com as informações e anexos.
+	
+2 - Instalar o pacote
+	-> Pegar o arquivo gerado. Objeto do c# <Package.cs>
+	-> Abrir no Update ITE.
+		->> Desserializar o objeto. <Package.cs> + seus anexos (.sql, .dll, .exe, etc..)
+		->> Executar arquivo por arquivo se for .sql, copiar os demais se for dll ou exe.
+	
+3 - Inserir a informação na base do cliente que o pacote 'xxx' foi instalado.

@@ -33,6 +33,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSolution.Framework.Server
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSolution.Framework.Client.Reports", "Client\ITS.ReportClient\ITSolution.Framework.Client.Reports.csproj", "{F79D5DC9-42C3-4B49-BCE1-F041BFF627A2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{464CE5B0-85C1-40FD-A035-D9A16860930B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSolution.Framework.Web.Administrator", "Web\ITSolution.Framework.Web.Administrator\ITSolution.Framework.Web.Administrator.csproj", "{40357AEA-0A6C-41FA-8802-BBF4B3727EB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +83,10 @@ Global
 		{F79D5DC9-42C3-4B49-BCE1-F041BFF627A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F79D5DC9-42C3-4B49-BCE1-F041BFF627A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F79D5DC9-42C3-4B49-BCE1-F041BFF627A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40357AEA-0A6C-41FA-8802-BBF4B3727EB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40357AEA-0A6C-41FA-8802-BBF4B3727EB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40357AEA-0A6C-41FA-8802-BBF4B3727EB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40357AEA-0A6C-41FA-8802-BBF4B3727EB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -95,6 +103,7 @@ Global
 		{EFAC283D-11A0-4254-94BE-C08AA045668F} = {82591721-0808-4018-8598-F4FC53243BDD}
 		{9BF50DF3-929F-4FFC-BF56-AA33FE61A390} = {82591721-0808-4018-8598-F4FC53243BDD}
 		{F79D5DC9-42C3-4B49-BCE1-F041BFF627A2} = {5764E592-9101-4C12-9FD2-DFC3F883EB9B}
+		{40357AEA-0A6C-41FA-8802-BBF4B3727EB9} = {464CE5B0-85C1-40FD-A035-D9A16860930B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {71DFB26D-0512-4912-B8C0-063D030A23AD}

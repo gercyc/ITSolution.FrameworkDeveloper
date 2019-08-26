@@ -121,4 +121,7 @@
     <Content Include="resources\server_go.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>$(SolutionDir)Copy_Output_Files_Framework.bat $(TargetPath)</PostBuildEvent>
+  </PropertyGroup>
 </Project>

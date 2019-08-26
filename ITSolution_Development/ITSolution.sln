@@ -37,7 +37,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{464CE5B0-85C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSolution.Framework.Web.Administrator", "Web\ITSolution.Framework.Web.Administrator\ITSolution.Framework.Web.Administrator.csproj", "{40357AEA-0A6C-41FA-8802-BBF4B3727EB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSolution.Framework.Web.BusinessAPI", "Web\ITSolution.Framework.Web.BusinessAPI\ITSolution.Framework.Web.BusinessAPI.csproj", "{A74092E4-BDDF-4563-99EF-A02007DFD48D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITSolution.Framework.Web.BusinessAPI", "Web\ITSolution.Framework.Web.BusinessAPI\ITSolution.Framework.Web.BusinessAPI.csproj", "{A74092E4-BDDF-4563-99EF-A02007DFD48D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2B21D459-11FF-4460-A52F-6A0C815F756B}"
+	ProjectSection(SolutionItems) = preProject
+		Copy_Output_Files_Framework.bat = Copy_Output_Files_Framework.bat
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

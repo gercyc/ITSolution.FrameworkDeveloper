@@ -18,7 +18,7 @@ namespace ITSolution.Framework.Util
         /// <returns></returns>Objeto deserializado
         public static T DeserializeObject<T>(byte[] bytes) where T : class
         {
-            if (bytes != null)
+            try
             {
                 Object obj = new Object();
                 var binaryFormatter = new BinaryFormatter();
@@ -31,10 +31,12 @@ namespace ITSolution.Framework.Util
                     return obj as T;
                 }
             }
-            else
+            catch (Exception)
+            {
                 return null;
+            }
         }
-        
+
         /// <summary>
         /// Deserializa um objeto
         /// </summary>

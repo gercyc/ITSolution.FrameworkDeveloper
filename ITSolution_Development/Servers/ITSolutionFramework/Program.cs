@@ -2,6 +2,7 @@
 using ITSolution.Framework.BaseClasses.Trace;
 using ITSolution.Framework.Common.BaseClasses;
 using ITSolution.Framework.Mensagem;
+using ITSolution.Framework.Util;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,6 +32,7 @@ namespace ITSolutionFramework
             //traceClass.ClientListener = app;
             PipeHost<TraceClass> _pipe = new PipeHost<TraceClass>("Trace", traceClass);
             _pipe.StartListen();
+            Console.WriteLine(ASCIIEncodingIts.Coded("its12345%"));
             Application.Run(app);
         }
 

@@ -1,5 +1,5 @@
-﻿using ITE.Entidades.POCO.Base;
-using ITE.Entidades.Repositorio;
+﻿using ITSolution.Framework.BaseClasses.License.POCO;
+using ITSolution.Framework.Dao.Contexto;
 using ITSolution.Framework.Mensagem;
 using System;
 using System.Collections.Generic;
@@ -7,13 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ITSolution.Admin.Entidades.DaoManager
+namespace ITSolution.Framework.BaseClasses.License
 {
     public class LicenseDaoManager
     {
         public bool SaveOrUpdateLicense(ItsLicense license)
         {
-            var ctx = new BalcaoContext();
+            var ctx = new ITSolutionContext();
 
             var licenseBd = ctx.LicenseDao.Find(license.IdLicense);
 
@@ -33,18 +33,20 @@ namespace ITSolution.Admin.Entidades.DaoManager
         {
             try
             {
-                var ctx = new BalcaoContext();
+                var ctx = new ITSolutionContext();
+
+                var lics = ctx.LicenseDao.FindAll();
 
                 //busca licencas ativas e com datafim nula, se nao encontrou nenhuma dispara advertencia.
-                var licActive = ctx.LicenseDao.Where(
-                    l => l.LicenseStatus
-                    || l.LicenseDataUnSerialized.DataFimLic == null).First();
+                var licActive = lics.Where(
+                    l => (l.LicenseDataUnSerialized != null) &&
+                    l.LicenseStatus && (l.LicenseDataUnSerialized.DataFimLic == null || l.LicenseDataUnSerialized.DataFimLic >= DateTime.Now)).FirstOrDefault();
 
                 //se encontrou alguma...
                 if (licActive != null)
                 {
                     //verifica a validade, se invalida lanca advertencia e retorna null 
-                    if(licActive.LicenseDataUnSerialized.DataInicioLic.Date <= DateTime.Now.Date
+                    if (licActive.LicenseDataUnSerialized.DataInicioLic.Date <= DateTime.Now.Date
                     && licActive.LicenseDataUnSerialized.DataFimLic.Date <= DateTime.Now.Date)
                     {
                         XMessageIts.Advertencia("A licença para " + licActive.CustomerName
@@ -55,8 +57,8 @@ namespace ITSolution.Admin.Entidades.DaoManager
                     //senao retorna a licenca como valida...
                     return licActive;
                 }
-                
-                return null;                                
+
+                return null;
             }
             catch (Exception)
             {

@@ -8,14 +8,18 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
-using ITE.Entidades.Repositorio;
 using ITSolution.Framework.Eventos.GridViewEvents;
 using ITSolution.Framework.Beans.ProgressBar;
-using ITE.Entidades.POCO.Base;
 using ITSolution.Framework.Util;
 using ITSolution.Framework.GuiUtil;
 using ITSolution.Admin.Entidades.DaoManager;
 using ITSolution.Framework.Mensagem;
+using ITSolution.Framework.BaseClasses.License;
+using ITSolution.Framework.BaseClasses.License.POCO;
+using ITSolution.Framework.Dao.Contexto;
+using ITSolution.Framework.Entities;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ITSolution.Admin.Forms.Util
 {
@@ -32,9 +36,13 @@ namespace ITSolution.Admin.Forms.Util
         }
         private async Task FillData()
         {
-            var ctx = new BalcaoContext();
+            var ctx = new ITSolutionContext();
+            var genCtx = new GenericContextIts<Customer>(AppConfigManager.Configuration.ConnectionString);
 
             var licenses = await ctx.LicenseDao.FindAllAsync();
+            var customers = await genCtx.Dao.FindAllAsync();
+
+            
 
             this.Invoke(new MethodInvoker(delegate
             {
@@ -43,12 +51,15 @@ namespace ITSolution.Admin.Forms.Util
                 this.gridViewLicenses.Focus();
             }));
 
-            var menus = await ctx.ItsMenuDao.FindAllAsync();
+            var menus = await ctx.MenuDao.FindAllAsync();
 
             this.Invoke(new MethodInvoker(delegate
             {
                 gridControlMenusAct.DataSource = menus.ToList();
                 this._gridFocusUtil.KeepFocusedRowChanged();
+
+                cbCustomer.Properties.Items.AddRange(customers);
+
             }));
 
         }
@@ -79,29 +90,28 @@ namespace ITSolution.Admin.Forms.Util
         private ItsLicense indexarLicenca()
         {
             var lic = new ItsLicense();
-
-            var cliFor = new ITE.Entidades.POCO.CliFor()
+            Customer selCust = (Customer)cbCustomer.SelectedItem;
+            var cliFor = new Customer
             {
-                //IdCliFor = lookUpCliFor1.CliFor.IdCliFor,
-                //RazaoSocial = lookUpCliFor1.CliFor.RazaoSocial,
-                //CpfCnpj = lookUpCliFor1.CliFor.CpfCnpj,
-                //NomeEndereco = lookUpCliFor1.CliFor.NomeEndereco,
-                //NumeroEndereco = lookUpCliFor1.CliFor.NumeroEndereco,
-                //TipoEndereco = lookUpCliFor1.CliFor.TipoEndereco,
-                //Complemento = lookUpCliFor1.CliFor.Complemento,
-                //Bairro = lookUpCliFor1.CliFor.Bairro,
-                //Cep = lookUpCliFor1.CliFor.Cep,
-                //Cidade = lookUpCliFor1.CliFor.Cidade,
-                //Classificacao = lookUpCliFor1.CliFor.Classificacao,
-                //Email = lookUpCliFor1.CliFor.Email,
-                //InscricaoEstadual = lookUpCliFor1.CliFor.InscricaoEstadual,
-                //InscricaoMunicipal = lookUpCliFor1.CliFor.InscricaoMunicipal,
-                //Uf = lookUpCliFor1.CliFor.Uf,
-                //Celular = lookUpCliFor1.CliFor.Celular,
-                //NomeFantasia = lookUpCliFor1.CliFor.NomeFantasia,
-                //NaturezaJuridica = lookUpCliFor1.CliFor.NaturezaJuridica,
-                //RG = lookUpCliFor1.CliFor.RG,
-                //Pais = lookUpCliFor1.CliFor.Pais
+                IdCliFor = selCust.IdCliFor,
+                RazaoSocial = selCust.RazaoSocial,
+                CpfCnpj = selCust.CpfCnpj,
+                NomeEndereco = selCust.NomeEndereco,
+                NumeroEndereco = selCust.NumeroEndereco,
+                TipoEndereco = selCust.TipoEndereco,
+                Complemento = selCust.Complemento,
+                Bairro = selCust.Bairro,
+                Cep = selCust.Cep,
+                Cidade = selCust.Cidade,
+                Email = selCust.Email,
+                InscricaoEstadual = selCust.InscricaoEstadual,
+                InscricaoMunicipal = selCust.InscricaoMunicipal,
+                Uf = selCust.Uf,
+                Celular = selCust.Celular,
+                NomeFantasia = selCust.NomeFantasia,
+                NaturezaJuridica = selCust.NaturezaJuridica,
+                RG = selCust.RG,
+                Pais = selCust.Pais
             };
 
             var startDate = dtStartDate.DateTime;
@@ -118,7 +128,9 @@ namespace ITSolution.Admin.Forms.Util
                     MenuText = menu.MenuText,
                     MenuType = menu.MenuType,
                     NomeMenu = menu.NomeMenu,
-                    Status = menu.Status
+                    Status = menu.Status,
+                    ActionController = menu.ActionController,
+                    ControllerClass = menu.ControllerClass
                 };
 
                 this.menuSelected.Add(newMenu);
@@ -157,6 +169,9 @@ namespace ITSolution.Admin.Forms.Util
         //indexa o form com os dados da licença focused no grid
         private void indexarForm(ItsLicense itsLicense)
         {
+            try
+            {
+
             if (itsLicense != null)
             {
                 var licData = SerializeIts.DeserializeObject<ItsLicenseData>(itsLicense.LicenseData);
@@ -169,6 +184,11 @@ namespace ITSolution.Admin.Forms.Util
                 dtStartDate.DateTime = startDate;
                 dtEndDate.DateTime = endDate;
                 gridControlMenusAct.DataSource = activeMenus;
+                }
+            }
+            catch (Exception ex)
+            {
+                XMessageIts.ExceptionMessage(ex);
             }
         }
 
@@ -182,5 +202,14 @@ namespace ITSolution.Admin.Forms.Util
             dtStartDate.Text = "";
             dtEndDate.Text = "";
         }
+    }
+    [Serializable]
+    [Table("CliFor")]
+    internal class Customer : AbstractClient
+    {
+        [Key]//pk
+        [Column]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]//sera auto increment
+        public int IdCliFor { get; set; }
     }
 }

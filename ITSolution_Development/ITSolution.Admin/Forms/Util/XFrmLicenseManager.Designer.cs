@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(XFrmLicenseManager));
-            this.barManager1 = new DevExpress.XtraBars.BarManager();
+            this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar1 = new DevExpress.XtraBars.Bar();
             this.btnNewLicense = new DevExpress.XtraBars.BarButtonItem();
             this.btnSaveLicense = new DevExpress.XtraBars.BarButtonItem();
@@ -39,21 +40,24 @@
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager();
+            this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager(this.components);
             this.dockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
             this.dockPanel1_Container = new DevExpress.XtraBars.Docking.ControlContainer();
             this.gridControlLicenses = new DevExpress.XtraGrid.GridControl();
-            this.itsLicenseBindingSource = new System.Windows.Forms.BindingSource();
+            this.itsLicenseBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridViewLicenses = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colIdLicense = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colCustomerName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colStartDate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colEndDate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colLicenseData = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colLicenseStatus = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.cbCustomer = new DevExpress.XtraEditors.ComboBoxEdit();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.gridControlMenusAct = new DevExpress.XtraGrid.GridControl();
-            this.itsMenuBindingSource = new System.Windows.Forms.BindingSource();
+            this.itsMenuBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridViewMenusAct = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colIdMenu = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colNomeMenu = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -64,9 +68,9 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.dtEndDate = new DevExpress.XtraEditors.DateEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            //this.lookUpCliFor1 = new ITE.Components.LookUp.LookUpCliFor();
             this.dtStartDate = new DevExpress.XtraEditors.DateEdit();
-            this.colLicenseStatus = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colController = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colAction = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).BeginInit();
             this.dockPanel1.SuspendLayout();
@@ -75,6 +79,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.itsLicenseBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewLicenses)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cbCustomer.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlMenusAct)).BeginInit();
@@ -163,31 +168,31 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(878, 30);
+            this.barDockControlTop.Size = new System.Drawing.Size(878, 31);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 386);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 384);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(878, 21);
+            this.barDockControlBottom.Size = new System.Drawing.Size(878, 23);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 30);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 31);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 356);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 353);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(878, 30);
+            this.barDockControlRight.Location = new System.Drawing.Point(878, 31);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 356);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 353);
             // 
             // dockManager1
             // 
@@ -212,16 +217,16 @@
             this.dockPanel1.Controls.Add(this.dockPanel1_Container);
             this.dockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Left;
             this.dockPanel1.ID = new System.Guid("00f02af4-cff2-42d9-bac3-14dfaffd0902");
-            this.dockPanel1.Location = new System.Drawing.Point(0, 30);
+            this.dockPanel1.Location = new System.Drawing.Point(0, 31);
             this.dockPanel1.Name = "dockPanel1";
             this.dockPanel1.OriginalSize = new System.Drawing.Size(374, 200);
-            this.dockPanel1.Size = new System.Drawing.Size(374, 356);
+            this.dockPanel1.Size = new System.Drawing.Size(374, 353);
             this.dockPanel1.Text = "Licenças geradas";
             // 
             // dockPanel1_Container
             // 
             this.dockPanel1_Container.Controls.Add(this.gridControlLicenses);
-            this.dockPanel1_Container.Location = new System.Drawing.Point(4, 26);
+            this.dockPanel1_Container.Location = new System.Drawing.Point(4, 23);
             this.dockPanel1_Container.Name = "dockPanel1_Container";
             this.dockPanel1_Container.Size = new System.Drawing.Size(365, 326);
             this.dockPanel1_Container.TabIndex = 0;
@@ -241,7 +246,7 @@
             // 
             // itsLicenseBindingSource
             // 
-            this.itsLicenseBindingSource.DataSource = typeof(ITE.Entidades.POCO.Base.ItsLicense);
+            this.itsLicenseBindingSource.DataSource = typeof(ITSolution.Framework.BaseClasses.License.POCO.ItsLicense);
             // 
             // gridViewLicenses
             // 
@@ -292,19 +297,44 @@
             this.colLicenseData.FieldName = "LicenseData";
             this.colLicenseData.Name = "colLicenseData";
             // 
+            // colLicenseStatus
+            // 
+            this.colLicenseStatus.Caption = "License Status";
+            this.colLicenseStatus.FieldName = "LicenseStatus";
+            this.colLicenseStatus.Name = "colLicenseStatus";
+            // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.labelControl3);
+            this.panel1.Controls.Add(this.cbCustomer);
             this.panel1.Controls.Add(this.groupControl1);
             this.panel1.Controls.Add(this.labelControl2);
             this.panel1.Controls.Add(this.dtEndDate);
             this.panel1.Controls.Add(this.labelControl1);
-            //this.panel1.Controls.Add(this.lookUpCliFor1);
             this.panel1.Controls.Add(this.dtStartDate);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(374, 30);
+            this.panel1.Location = new System.Drawing.Point(374, 31);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(504, 356);
+            this.panel1.Size = new System.Drawing.Size(504, 353);
             this.panel1.TabIndex = 5;
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Location = new System.Drawing.Point(13, 19);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(46, 13);
+            this.labelControl3.TabIndex = 9;
+            this.labelControl3.Text = "Customer";
+            // 
+            // cbCustomer
+            // 
+            this.cbCustomer.Location = new System.Drawing.Point(13, 38);
+            this.cbCustomer.MenuManager = this.barManager1;
+            this.cbCustomer.Name = "cbCustomer";
+            this.cbCustomer.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbCustomer.Size = new System.Drawing.Size(314, 20);
+            this.cbCustomer.TabIndex = 8;
             // 
             // groupControl1
             // 
@@ -314,7 +344,7 @@
             this.groupControl1.Controls.Add(this.gridControlMenusAct);
             this.groupControl1.Location = new System.Drawing.Point(13, 119);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(479, 231);
+            this.groupControl1.Size = new System.Drawing.Size(479, 228);
             this.groupControl1.TabIndex = 7;
             this.groupControl1.Text = "Menus liberados";
             // 
@@ -322,7 +352,7 @@
             // 
             this.gridControlMenusAct.DataSource = this.itsMenuBindingSource;
             this.gridControlMenusAct.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControlMenusAct.Location = new System.Drawing.Point(2, 23);
+            this.gridControlMenusAct.Location = new System.Drawing.Point(2, 20);
             this.gridControlMenusAct.MainView = this.gridViewMenusAct;
             this.gridControlMenusAct.MenuManager = this.barManager1;
             this.gridControlMenusAct.Name = "gridControlMenusAct";
@@ -333,7 +363,7 @@
             // 
             // itsMenuBindingSource
             // 
-            this.itsMenuBindingSource.DataSource = typeof(ITE.Entidades.POCO.Base.ItsMenu);
+            this.itsMenuBindingSource.DataSource = typeof(ITSolution.Framework.BaseClasses.License.POCO.ItsMenu);
             // 
             // gridViewMenusAct
             // 
@@ -343,7 +373,9 @@
             this.colMenuPai,
             this.colStatus,
             this.colMenuText,
-            this.colMenuType});
+            this.colMenuType,
+            this.colController,
+            this.colAction});
             this.gridViewMenusAct.GridControl = this.gridControlMenusAct;
             this.gridViewMenusAct.Name = "gridViewMenusAct";
             this.gridViewMenusAct.OptionsView.ShowGroupPanel = false;
@@ -422,17 +454,6 @@
             this.labelControl1.TabIndex = 4;
             this.labelControl1.Text = "Data de início da licença";
             // 
-            // lookUpCliFor1
-            // 
-            //this.lookUpCliFor1.CliFor = null;
-            //this.lookUpCliFor1.Filial = null;
-            //this.lookUpCliFor1.LabelText = "Cliente/Fornecedor:";
-            //this.lookUpCliFor1.Location = new System.Drawing.Point(13, 10);
-            //this.lookUpCliFor1.Matriz = null;
-            //this.lookUpCliFor1.Name = "lookUpCliFor1";
-            //this.lookUpCliFor1.Size = new System.Drawing.Size(380, 48);
-            //this.lookUpCliFor1.TabIndex = 0;
-            // 
             // dtStartDate
             // 
             this.dtStartDate.EditValue = null;
@@ -446,11 +467,17 @@
             this.dtStartDate.Size = new System.Drawing.Size(136, 20);
             this.dtStartDate.TabIndex = 1;
             // 
-            // colLicenseStatus
+            // colController
             // 
-            this.colLicenseStatus.Caption = "License Status";
-            this.colLicenseStatus.FieldName = "LicenseStatus";
-            this.colLicenseStatus.Name = "colLicenseStatus";
+            this.colController.Caption = "Controller";
+            this.colController.FieldName = "ControllerClass";
+            this.colController.Name = "colController";
+            // 
+            // colAction
+            // 
+            this.colAction.Caption = "Action";
+            this.colAction.FieldName = "ActionController";
+            this.colAction.Name = "colAction";
             // 
             // XFrmLicenseManager
             // 
@@ -475,6 +502,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridViewLicenses)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cbCustomer.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlMenusAct)).EndInit();
@@ -529,5 +557,9 @@
         private DevExpress.XtraGrid.Columns.GridColumn colEndDate;
         private DevExpress.XtraGrid.Columns.GridColumn colLicenseData;
         private DevExpress.XtraGrid.Columns.GridColumn colLicenseStatus;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.ComboBoxEdit cbCustomer;
+        private DevExpress.XtraGrid.Columns.GridColumn colController;
+        private DevExpress.XtraGrid.Columns.GridColumn colAction;
     }
 }

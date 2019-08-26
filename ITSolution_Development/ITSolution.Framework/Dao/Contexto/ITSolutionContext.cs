@@ -3,6 +3,7 @@ using ITSolution.Framework.Dao.Repositorio.Base;
 using ITSolution.Framework.Entities;
 using System.Data.Entity;
 using System.Data.Entity.SqlServer;
+using ITSolution.Framework.BaseClasses.License.POCO;
 
 // Singletone
 namespace ITSolution.Framework.Dao.Contexto
@@ -53,6 +54,17 @@ namespace ITSolution.Framework.Dao.Contexto
         public Dao<Parametro> ParametroDao { get { return new Dao<Parametro>(this); } }
         public Dao<SkinDevExpress> SkinDevExpressDao { get { return new Dao<SkinDevExpress>(this); } }
         public Dao<TipoLogradouro> TipoLogradouroDao { get { return new Dao<TipoLogradouro>(this); } }
+
+        #region License Manager
+        public Dao<ItsLicense> LicenseDao { get { return new Dao<ItsLicense>(this); } }
+        public virtual DbSet<ItsLicense> LicenseDbSet { get; set; }
+
+        public Dao<ItsMenu> MenuDao { get { return new Dao<ItsMenu>(this); } }
+        public virtual DbSet<ItsMenu> MenuDbSet { get; set; }
+
+
+        #endregion
+
 
         #endregion Propriedades de controle de persistencia
 

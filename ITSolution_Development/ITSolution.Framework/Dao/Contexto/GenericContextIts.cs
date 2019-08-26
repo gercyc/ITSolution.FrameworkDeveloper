@@ -41,6 +41,7 @@ namespace ITSolution.Framework.Dao.Contexto
             SqlProviderServices.TruncateDecimalsToScale = false;
 
             this.DbSet = this.Set<T>();
+            
 
         }
 
@@ -53,6 +54,7 @@ namespace ITSolution.Framework.Dao.Contexto
                 seja configurado como VARCHAR no SQL Server*/
             modelBuilder.Properties<string>()
                       .Configure(p => p.HasColumnType("varchar"));
+
         }
 
 

@@ -23,7 +23,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSolution.Framework.Server
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSolution.Framework.Common", "Common\ITSolution.Framework.Common\ITSolution.Framework.Common.csproj", "{6228C23A-3C31-4F75-B4A4-E07F159A38A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSolutionFramework", "Servers\ITSolutionFramework\ITSolutionFramework.csproj", "{2BA38B19-58CA-44BC-9341-CEF567ECE5A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSolution.Framework.ServiceHost", "Servers\ITSolutionFramework\ITSolution.Framework.ServiceHost.csproj", "{2BA38B19-58CA-44BC-9341-CEF567ECE5A0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSolution.Framework.Server.TraceMonitor", "Servers\ITSolution.Framework.Server.TraceMonitor\ITSolution.Framework.Server.TraceMonitor.csproj", "{009835F4-647E-44B3-BF47-9BEC026D776A}"
 EndProject
@@ -43,6 +43,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		Copy_Output_Files_Framework.bat = Copy_Output_Files_Framework.bat
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSolution.Framework.Windows.Forms", "Client\ITSolution.Windows.Forms\ITSolution.Framework.Windows.Forms.csproj", "{B61AAE25-3FD3-4B22-9AB1-3410B4D237F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -98,6 +100,10 @@ Global
 		{A74092E4-BDDF-4563-99EF-A02007DFD48D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A74092E4-BDDF-4563-99EF-A02007DFD48D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A74092E4-BDDF-4563-99EF-A02007DFD48D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B61AAE25-3FD3-4B22-9AB1-3410B4D237F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B61AAE25-3FD3-4B22-9AB1-3410B4D237F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B61AAE25-3FD3-4B22-9AB1-3410B4D237F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B61AAE25-3FD3-4B22-9AB1-3410B4D237F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -116,6 +122,7 @@ Global
 		{F79D5DC9-42C3-4B49-BCE1-F041BFF627A2} = {5764E592-9101-4C12-9FD2-DFC3F883EB9B}
 		{40357AEA-0A6C-41FA-8802-BBF4B3727EB9} = {464CE5B0-85C1-40FD-A035-D9A16860930B}
 		{A74092E4-BDDF-4563-99EF-A02007DFD48D} = {464CE5B0-85C1-40FD-A035-D9A16860930B}
+		{B61AAE25-3FD3-4B22-9AB1-3410B4D237F3} = {5764E592-9101-4C12-9FD2-DFC3F883EB9B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {71DFB26D-0512-4912-B8C0-063D030A23AD}

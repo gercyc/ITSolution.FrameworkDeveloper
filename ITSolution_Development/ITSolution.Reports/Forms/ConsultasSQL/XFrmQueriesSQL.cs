@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using ITSolution.Reports.Repositorio;
-using ITSolution.Framework.Beans.ProgressBar;
 using ITSolution.Framework.GuiUtil;
 using ITSolution.Framework.Mensagem;
 using ITSolution.Framework.Common.BaseClasses.Reports;
+using ITSolution.Framework.Windows.Forms.BaseForms;
 
 namespace ITSolution.Reports.Forms.ConsultasSQL
 {

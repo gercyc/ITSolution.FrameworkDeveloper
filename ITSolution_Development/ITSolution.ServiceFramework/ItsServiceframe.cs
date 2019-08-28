@@ -1,6 +1,4 @@
 ﻿using ITSolution.Reports.Util;
-using ITSolution.Scheduler.Manager;
-using ITSolution.ServiceFramework.BaseClasses;
 using ITSolution.ServiceFramework.Servers;
 using ITSolution.ServiceFramework.Service;
 using System;
@@ -40,9 +38,9 @@ namespace ITSolution.ServiceFramework
         private void btnStarScheduler_Click(object sender, EventArgs e)
         {
 
-            var jobServer = new JobServer(new Uri("http://localhost:9090/scheduler"));
-            jobServer.Start();
-            btnStarScheduler.Text = jobServer.State.ToString();
+            //var jobServer = new JobServer(new Uri("http://localhost:9090/scheduler"));
+            //jobServer.Start();
+            //btnStarScheduler.Text = jobServer.State.ToString();
         }
         private void createHost()
         {

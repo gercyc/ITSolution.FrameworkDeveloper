@@ -125,6 +125,10 @@
       <Project>{a5a1a9bb-6c1b-4a0b-867b-e59132fc51b9}</Project>
       <Name>ITSolution.Framework</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ITSolution.Windows.Forms\ITSolution.Framework.Windows.Forms.csproj">
+      <Project>{b61aae25-3fd3-4b22-9ab1-3410b4d237f3}</Project>
+      <Name>ITSolution.Framework.Windows.Forms</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -26,7 +26,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\..\..\..\..\..\ITSolution\Framework\</OutputPath>
+    <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -53,6 +53,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseClasses\CommonEntities\AbstractUser.cs" />
+    <Compile Include="BaseClasses\CommonEntities\CotacaoMonetaria.cs" />
+    <Compile Include="BaseClasses\CommonEntities\IndicadoresBacen.cs" />
+    <Compile Include="BaseClasses\CommonEntities\ItsUser.cs" />
+    <Compile Include="BaseClasses\CommonEntities\Moeda.cs" />
     <Compile Include="BaseClasses\ItsServerInfo.cs" />
     <Compile Include="BaseClasses\Reports\AbstractReportImage.cs" />
     <Compile Include="BaseClasses\Reports\DashboardImage.cs" />
@@ -65,9 +70,62 @@
     <Compile Include="BaseClasses\Reports\ReportSpool.cs" />
     <Compile Include="BaseClasses\Reports\SqlQueryIts.cs" />
     <Compile Include="BaseClasses\TransactionInfo.cs" />
+    <Compile Include="BaseClasses\TypeCodigoBacen.cs" />
+    <Compile Include="BaseClasses\TypeCotacaoMonetaria.cs" />
+    <Compile Include="BaseInterfaces\IReportServer.cs" />
+    <Compile Include="Connected Services\WSBacen\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Connected Services\WSBacen\FachadaWSSGS.wsdl" />
+    <None Include="Connected Services\WSBacen\ITSolution.Framework.Common.WSBacen.getUltimosValoresSerieVOResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSBacen\ITSolution.Framework.Common.WSBacen.getUltimoValorVOResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSBacen\ITSolution.Framework.Common.WSBacen.getUltimoValorXMLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSBacen\ITSolution.Framework.Common.WSBacen.getValorEspecialResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSBacen\ITSolution.Framework.Common.WSBacen.getValoresSeriesVOResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSBacen\ITSolution.Framework.Common.WSBacen.getValoresSeriesXMLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSBacen\ITSolution.Framework.Common.WSBacen.getValorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSBacen\ITSolution.Framework.Common.WSBacen.WSSerieVO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\WSBacen\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WSBacen\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WSBacen\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WSBacen\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>$(SolutionDir)Copy_Output_Files_Framework.bat $(TargetPath)</PostBuildEvent>

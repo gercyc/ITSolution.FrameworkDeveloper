@@ -48,7 +48,7 @@ namespace ITSolution.Admin.Forms.ListView
 
         public void RefreshItemClick()
         {
-            XFrmWait.StartTask(carregarPacotes(), "Carregando pacotes");
+            ITSolution.Framework.Beans.ProgressBar.XFrmWait.StartTask(carregarPacotes(), "Carregando pacotes");
         }
 
         #endregion

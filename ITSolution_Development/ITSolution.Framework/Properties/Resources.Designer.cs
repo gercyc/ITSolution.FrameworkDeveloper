@@ -22,7 +22,7 @@ namespace ITSolution.Framework.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace ITSolution.Framework.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ITSolution.Framework.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace ITSolution.Framework.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap apply_16x16 {
+        public static System.Drawing.Bitmap apply_16x16 {
             get {
                 object obj = ResourceManager.GetObject("apply_16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +73,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap banco_brasil {
+        public static System.Drawing.Bitmap banco_brasil {
             get {
                 object obj = ResourceManager.GetObject("banco_brasil", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -83,7 +83,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bancoob {
+        public static System.Drawing.Bitmap bancoob {
             get {
                 object obj = ResourceManager.GetObject("bancoob", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -93,7 +93,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bradesco {
+        public static System.Drawing.Bitmap bradesco {
             get {
                 object obj = ResourceManager.GetObject("bradesco", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -103,7 +103,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap caixa {
+        public static System.Drawing.Bitmap caixa {
             get {
                 object obj = ResourceManager.GetObject("caixa", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -113,7 +113,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cancel_16x16 {
+        public static System.Drawing.Bitmap cancel_16x16 {
             get {
                 object obj = ResourceManager.GetObject("cancel_16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -123,7 +123,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Cancel2_small {
+        public static System.Drawing.Bitmap Cancel2_small {
             get {
                 object obj = ResourceManager.GetObject("Cancel2_small", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -133,7 +133,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Clear_16x16 {
+        public static System.Drawing.Bitmap Clear_16x16 {
             get {
                 object obj = ResourceManager.GetObject("Clear_16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -143,7 +143,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Edit_16x16 {
+        public static System.Drawing.Bitmap Edit_16x16 {
             get {
                 object obj = ResourceManager.GetObject("Edit_16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -153,7 +153,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap exit {
+        public static System.Drawing.Bitmap exit {
             get {
                 object obj = ResourceManager.GetObject("exit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -163,7 +163,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FirstRecord_small {
+        public static System.Drawing.Bitmap FirstRecord_small {
             get {
                 object obj = ResourceManager.GetObject("FirstRecord_small", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -173,7 +173,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap index_32x32 {
+        public static System.Drawing.Bitmap index_32x32 {
             get {
                 object obj = ResourceManager.GetObject("index_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -183,7 +183,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap invoice {
+        public static System.Drawing.Bitmap invoice {
             get {
                 object obj = ResourceManager.GetObject("invoice", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -193,7 +193,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap itau {
+        public static System.Drawing.Bitmap itau {
             get {
                 object obj = ResourceManager.GetObject("itau", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -203,7 +203,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap itau_blue {
+        public static System.Drawing.Bitmap itau_blue {
             get {
                 object obj = ResourceManager.GetObject("itau_blue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -213,7 +213,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap itau_orange {
+        public static System.Drawing.Bitmap itau_orange {
             get {
                 object obj = ResourceManager.GetObject("itau_orange", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -223,7 +223,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap itsolution {
+        public static System.Drawing.Bitmap itsolution {
             get {
                 object obj = ResourceManager.GetObject("itsolution", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -233,7 +233,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap LastRecord_small {
+        public static System.Drawing.Bitmap LastRecord_small {
             get {
                 object obj = ResourceManager.GetObject("LastRecord_small", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -243,7 +243,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap loading {
+        public static System.Drawing.Bitmap loading {
             get {
                 object obj = ResourceManager.GetObject("loading", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -253,7 +253,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap New_16x16 {
+        public static System.Drawing.Bitmap New_16x16 {
             get {
                 object obj = ResourceManager.GetObject("New_16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -263,7 +263,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap NewItem_small {
+        public static System.Drawing.Bitmap NewItem_small {
             get {
                 object obj = ResourceManager.GetObject("NewItem_small", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -273,7 +273,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap NextRecord_small {
+        public static System.Drawing.Bitmap NextRecord_small {
             get {
                 object obj = ResourceManager.GetObject("NextRecord_small", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -283,7 +283,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap one_dollar {
+        public static System.Drawing.Bitmap one_dollar {
             get {
                 object obj = ResourceManager.GetObject("one_dollar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -293,7 +293,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PreviousRecord_small {
+        public static System.Drawing.Bitmap PreviousRecord_small {
             get {
                 object obj = ResourceManager.GetObject("PreviousRecord_small", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -303,7 +303,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Refresh_small {
+        public static System.Drawing.Bitmap Refresh_small {
             get {
                 object obj = ResourceManager.GetObject("Refresh_small", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -313,7 +313,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon rfb {
+        public static System.Drawing.Icon rfb {
             get {
                 object obj = ResourceManager.GetObject("rfb", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -323,7 +323,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap rfb16x16 {
+        public static System.Drawing.Bitmap rfb16x16 {
             get {
                 object obj = ResourceManager.GetObject("rfb16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -333,7 +333,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap rfb32x32 {
+        public static System.Drawing.Bitmap rfb32x32 {
             get {
                 object obj = ResourceManager.GetObject("rfb32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -343,7 +343,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap rfb48x48 {
+        public static System.Drawing.Bitmap rfb48x48 {
             get {
                 object obj = ResourceManager.GetObject("rfb48x48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -353,7 +353,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap santander {
+        public static System.Drawing.Bitmap santander {
             get {
                 object obj = ResourceManager.GetObject("santander", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -363,7 +363,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Save_16x16 {
+        public static System.Drawing.Bitmap Save_16x16 {
             get {
                 object obj = ResourceManager.GetObject("Save_16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -373,7 +373,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Save_small {
+        public static System.Drawing.Bitmap Save_small {
             get {
                 object obj = ResourceManager.GetObject("Save_small", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -383,7 +383,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap scanner_advanced_128x128 {
+        public static System.Drawing.Bitmap scanner_advanced_128x128 {
             get {
                 object obj = ResourceManager.GetObject("scanner_advanced_128x128", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -393,7 +393,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap scanner_advanced_16x16 {
+        public static System.Drawing.Bitmap scanner_advanced_16x16 {
             get {
                 object obj = ResourceManager.GetObject("scanner_advanced_16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -403,7 +403,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap scanner_advanced_32x32 {
+        public static System.Drawing.Bitmap scanner_advanced_32x32 {
             get {
                 object obj = ResourceManager.GetObject("scanner_advanced_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -413,7 +413,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap scanner1_16x16 {
+        public static System.Drawing.Bitmap scanner1_16x16 {
             get {
                 object obj = ResourceManager.GetObject("scanner1_16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -423,7 +423,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap scanner1_32x32 {
+        public static System.Drawing.Bitmap scanner1_32x32 {
             get {
                 object obj = ResourceManager.GetObject("scanner1_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -433,7 +433,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap scanner2_16x16 {
+        public static System.Drawing.Bitmap scanner2_16x16 {
             get {
                 object obj = ResourceManager.GetObject("scanner2_16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -443,7 +443,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap scanner2_32x32 {
+        public static System.Drawing.Bitmap scanner2_32x32 {
             get {
                 object obj = ResourceManager.GetObject("scanner2_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -453,7 +453,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] skins_bonus {
+        public static byte[] skins_bonus {
             get {
                 object obj = ResourceManager.GetObject("skins_bonus", resourceCulture);
                 return ((byte[])(obj));
@@ -463,7 +463,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] skins_default {
+        public static byte[] skins_default {
             get {
                 object obj = ResourceManager.GetObject("skins_default", resourceCulture);
                 return ((byte[])(obj));
@@ -473,7 +473,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] skins_theme {
+        public static byte[] skins_theme {
             get {
                 object obj = ResourceManager.GetObject("skins_theme", resourceCulture);
                 return ((byte[])(obj));
@@ -483,7 +483,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap stock_print_setup {
+        public static System.Drawing.Bitmap stock_print_setup {
             get {
                 object obj = ResourceManager.GetObject("stock_print_setup", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -493,7 +493,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap title_bar {
+        public static System.Drawing.Bitmap title_bar {
             get {
                 object obj = ResourceManager.GetObject("title_bar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -503,7 +503,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Undo_small {
+        public static System.Drawing.Bitmap Undo_small {
             get {
                 object obj = ResourceManager.GetObject("Undo_small", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -513,7 +513,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap w10_black_blue {
+        public static System.Drawing.Bitmap w10_black_blue {
             get {
                 object obj = ResourceManager.GetObject("w10_black_blue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -523,7 +523,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap wallpaper_medicina {
+        public static System.Drawing.Bitmap wallpaper_medicina {
             get {
                 object obj = ResourceManager.GetObject("wallpaper_medicina", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -533,7 +533,7 @@ namespace ITSolution.Framework.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap windows7_background_setup {
+        public static System.Drawing.Bitmap windows7_background_setup {
             get {
                 object obj = ResourceManager.GetObject("windows7_background_setup", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));

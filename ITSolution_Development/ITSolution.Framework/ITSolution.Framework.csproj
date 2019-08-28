@@ -25,7 +25,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\..\..\..\..\ITSolution\Framework\</OutputPath>
+    <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -42,136 +42,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Boleto.Net, Version=2.0.1.4, Culture=neutral, PublicKeyToken=53630c3583b7ed5c, processorArchitecture=MSIL">
-      <HintPath>..\packages\Boleto.Net.2.1.0.787\lib\Boleto.Net.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.BonusSkins.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.CodeParser.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.TreeMap.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.XtraTreeMap.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.Dashboard.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.Dashboard.v17.1.Win, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.Data.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.DataAccess.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.DataAccess.v17.1.UI, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.Map.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.PivotGrid.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.Pdf.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.Utils.v17.1.UI, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.Xpo.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.XtraCharts.v17.1.Extensions, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.XtraCharts.v17.1.UI, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.XtraCharts.v17.1.Wizard, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.XtraGauges.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.XtraGauges.v17.1.Presets, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.XtraGauges.v17.1.Win, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.XtraMap.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.XtraNavBar.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.XtraPivotGrid.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.RichEdit.v17.1.Export, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.XtraReports.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.XtraReports.v17.1.Extensions, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.XtraRichEdit.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.XtraRichEdit.v17.1.Extensions, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.XtraTreeList.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.XtraVerticalGrid.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.XtraWizard.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>False</Private>
-    </Reference>
     <Reference Include="DotNetZip, Version=1.13.3.0, Culture=neutral, PublicKeyToken=6583c7c814667745, processorArchitecture=MSIL">
       <HintPath>..\packages\DotNetZip.1.13.3\lib\net40\DotNetZip.dll</HintPath>
     </Reference>
@@ -184,36 +54,8 @@
     <Reference Include="itextsharp, Version=5.5.13.1, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
       <HintPath>..\packages\iTextSharp.5.5.13.1\lib\itextsharp.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unofficial.Microsoft.SQLServer.SMO.2014.12.0.2000.8\lib\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.SqlServer.ConnectionInfoExtended, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unofficial.Microsoft.SQLServer.SMO.2014.12.0.2000.8\lib\Microsoft.SqlServer.ConnectionInfoExtended.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unofficial.Microsoft.SQLServer.SMO.2014.12.0.2000.8\lib\Microsoft.SqlServer.Management.Sdk.Sfc.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.SqlServer.Smo, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unofficial.Microsoft.SQLServer.SMO.2014.12.0.2000.8\lib\Microsoft.SqlServer.Smo.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.SqlServer.SmoExtended, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unofficial.Microsoft.SQLServer.SMO.2014.12.0.2000.8\lib\Microsoft.SqlServer.SmoExtended.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.SqlServer.SqlClrProvider, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unofficial.Microsoft.SQLServer.SMO.2014.12.0.2000.8\lib\Microsoft.SqlServer.SqlClrProvider.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.SqlServer.SqlEnum, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unofficial.Microsoft.SQLServer.SMO.2014.12.0.2000.8\lib\Microsoft.SqlServer.SqlEnum.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="NReco.PdfGenerator, Version=1.1.12.0, Culture=neutral, PublicKeyToken=231663d50a41b451, processorArchitecture=MSIL">
-      <HintPath>..\packages\Boleto.Net.2.1.0.787\lib\NReco.PdfGenerator.dll</HintPath>
-    </Reference>
-    <Reference Include="ScintillaNET, Version=3.6.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\jacobslusser.ScintillaNET.3.6.3\lib\net40\ScintillaNET.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -247,30 +89,21 @@
     <Compile Include="Arquivos\FileManagerIts.cs" />
     <Compile Include="Arquivos\XmlUtil.cs" />
     <Compile Include="Arquivos\ZipUtil.cs" />
+    <Compile Include="BaseClasses\AppConfigManager.cs" />
     <Compile Include="BaseClasses\Consts.cs" />
-    <Compile Include="BaseClasses\DefaultServer.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="BaseClasses\DefaultServer.Designer.cs">
-      <DependentUpon>DefaultServer.cs</DependentUpon>
-    </Compile>
+    <Compile Include="BaseClasses\DecodedAppConfig.cs" />
     <Compile Include="BaseClasses\EnvironmentInformation.cs" />
-    <Compile Include="BaseClasses\ITSApplication.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="BaseClasses\ITSApplication.Designer.cs">
-      <DependentUpon>ITSApplication.cs</DependentUpon>
-    </Compile>
+    <Compile Include="BaseClasses\ITSAttributes.cs" />
     <Compile Include="BaseClasses\ITSDBObject.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="BaseClasses\ITSDBObject.Designer.cs">
       <DependentUpon>ITSDBObject.cs</DependentUpon>
     </Compile>
-    <Compile Include="BaseClasses\License\LicenseDaoManager.cs" />
     <Compile Include="BaseClasses\License\POCO\ItsLicense.cs" />
     <Compile Include="BaseClasses\License\POCO\ItsLicenseData.cs" />
     <Compile Include="BaseClasses\License\POCO\ItsMenu.cs" />
+    <Compile Include="BaseClasses\RegisterServices\RegisterServices.cs" />
     <Compile Include="BaseClasses\StaticInfo.cs" />
     <Compile Include="BaseClasses\ThirdyPartyComponents\Design\ContextTypeTypeConverter.cs" />
     <Compile Include="BaseClasses\ThirdyPartyComponents\Design\EntitySetTypeDescriptor.cs" />
@@ -287,138 +120,25 @@
     <Compile Include="BaseClasses\Trace\TraceClass.cs" />
     <Compile Include="BaseClasses\Trace\TraceServer.cs" />
     <Compile Include="BaseClasses\Trace\TraceServerListener.cs" />
-    <Compile Include="BaseForms\ITSBasicJobForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BaseForms\ITSBasicJobForm.Designer.cs">
-      <DependentUpon>ITSBasicJobForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BaseForms\ITSDBTransaction.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BaseForms\ITSDBTransaction.Designer.cs">
-      <DependentUpon>ITSDBTransaction.cs</DependentUpon>
-    </Compile>
+    <Compile Include="BaseInterfaces\IConfigurationService.cs" />
     <Compile Include="BaseInterfaces\IITSTransaction.cs" />
-    <Compile Include="BaseInterfaces\IJobCreator.cs" />
-    <Compile Include="BaseInterfaces\IReportServer.cs" />
+    <Compile Include="BaseInterfaces\ILicenseManager.cs" />
     <Compile Include="BaseInterfaces\ITrace.cs" />
     <Compile Include="BaseInterfaces\IWCFConnector.cs" />
     <Compile Include="BaseClasses\WCFUtils.cs" />
-    <Compile Include="BaseForms\ITSAncestorDesktop.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BaseForms\ITSAncestorDesktop.Designer.cs">
-      <DependentUpon>ITSAncestorDesktop.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BaseForms\ITSTransaction.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BaseForms\ITSTransaction.Designer.cs">
-      <DependentUpon>ITSTransaction.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BaseInterfaces\IITSDesktop.cs" />
     <Compile Include="BaseInterfaces\IITSTools.cs" />
     <Compile Include="BaseInterfaces\ITSFrameworkServer.cs" />
-    <Compile Include="Components\CepControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Components\CepControl.Designer.cs">
-      <DependentUpon>CepControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Components\CpfCnpjControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Components\CpfCnpjControl.Designer.cs">
-      <DependentUpon>CpfCnpjControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ConnectionFactory\Access\ConnectionFactoryAccess.cs" />
-    <Compile Include="ConnectionFactory\ITransactionSql.cs" />
-    <Compile Include="Dao\Contexto\AppConfigDefaultManager.cs" />
-    <Compile Include="Dao\Contexto\LembreteDaoManager.cs" />
-    <Compile Include="Dao\Contexto\ContatoDaoManager.cs" />
     <Compile Include="Entities\CalendarMonth.cs" />
     <Compile Include="Entities\Computer.cs" />
     <Compile Include="Entities\DatabaseIts.cs" />
     <Compile Include="Entities\EnumTypeClazz.cs" />
     <Compile Include="Enumeradores\TypeMoeda.cs" />
     <Compile Include="Enumeradores\TypeParametro.cs" />
-    <Compile Include="Eventos\TreevireEvents\TreeViewFocusRowChangedEvent.cs" />
-    <Compile Include="Forms\ParamsFindEntity.cs" />
-    <Compile Include="Forms\XFrmContato.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\XFrmContato.Designer.cs">
-      <DependentUpon>XFrmContato.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\XFrmAgendaContatos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\XFrmAgendaContatos.Designer.cs">
-      <DependentUpon>XFrmAgendaContatos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\XFrmExcelManager.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\XFrmExcelManager.designer.cs">
-      <DependentUpon>XFrmExcelManager.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\XFrmHighlighting.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\XFrmHighlighting.Designer.cs">
-      <DependentUpon>XFrmHighlighting.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\XFrmLembrete.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\XFrmLembrete.Designer.cs">
-      <DependentUpon>XFrmLembrete.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\XFrmLoginRestrito.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\XFrmLoginRestrito.Designer.cs">
-      <DependentUpon>XFrmLoginRestrito.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\XFrmRestoreBackupSQL.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\XFrmRestoreBackupSQL.Designer.cs">
-      <DependentUpon>XFrmRestoreBackupSQL.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ConnectionFactory\MySQL\ConnectionMySqlIts.cs" />
-    <Compile Include="Dao\Contexto\AppConfigManager.cs" />
-    <Compile Include="Dao\Contexto\ITSolutionContext.cs" />
-    <Compile Include="Dao\Contexto\ParametroManager.cs" />
     <Compile Include="Entities\AbstractContaBancaria.cs" />
     <Compile Include="Entities\AppConfigIts.cs" />
-    <Compile Include="Forms\XFrmBackupSQL.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\XFrmBackupSQL.Designer.cs">
-      <DependentUpon>XFrmBackupSQL.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\XFrmLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\XFrmLogin.Designer.cs">
-      <DependentUpon>XFrmLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\XFrmClienteView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\XFrmClienteView.designer.cs">
-      <DependentUpon>XFrmClienteView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ConnectionFactory\SQLServer\BackupSql.cs" />
-    <Compile Include="ConnectionFactory\SQLServer\RestoreBackupSql.cs" />
-    <Compile Include="ConnectionFactory\SQLServer\SqlUtil.cs" />
-    <Compile Include="Dao\Contexto\IConfigurationService.cs" />
     <Compile Include="Entities\AbstractAttach.cs" />
     <Compile Include="Entities\Contato.cs" />
     <Compile Include="Entities\AbstractCompany.cs" />
-    <Compile Include="Entities\AbstractUser.cs" />
     <Compile Include="Entities\Lembrete.cs" />
     <Compile Include="Entities\MunicipioIts.cs" />
     <Compile Include="Entities\SkinDevExpress.cs" />
@@ -430,156 +150,26 @@
     <Compile Include="Enumeradores\TypeReport.cs" />
     <Compile Include="Enumeradores\TypeSituacaoCliente.cs" />
     <Compile Include="Enumeradores\TypeSkinTheme.cs" />
-    <Compile Include="Eventos\GridViewEvents\FocusRowChangedEvent.cs" />
-    <Compile Include="Eventos\GridViewEvents\AbstractMasterRow.cs" />
-    <Compile Include="Eventos\GridViewEvents\IMasterRowEvent.cs" />
-    <Compile Include="Eventos\GridViewEvents\RowCellStyleEvent.cs" />
-    <Compile Include="GuiUtil\ItsControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GuiUtil\ScintillaUtil.cs" />
-    <Compile Include="GuiUtil\SkinUtil.cs" />
-    <Compile Include="Forms\DaoActionItemClick.cs" />
-    <Compile Include="Forms\XFrmLogoIts.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\XFrmLogoIts.designer.cs">
-      <DependentUpon>XFrmLogoIts.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\XFrmPdfConvertToText.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\XFrmPdfConvertToText.designer.cs">
-      <DependentUpon>XFrmPdfConvertToText.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GuiUtil\WizardControlUtil.cs" />
-    <Compile Include="Listeners\WizardFocusButtonNext.cs" />
-    <Compile Include="Mensagem\MessageBoxException.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Mensagem\MessageBoxException.Designer.cs">
-      <DependentUpon>MessageBoxException.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Mensagem\MessageBoxTick.designer.cs">
-      <DependentUpon>MessageBoxTick.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ProgressBar\WaitEntityFramework.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ProgressBar\WaitEntityFramework.Designer.cs">
-      <DependentUpon>WaitEntityFramework.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ProgressBar\XFrmEntityFramework.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ProgressBar\XFrmEntityFramework.Designer.cs">
-      <DependentUpon>XFrmEntityFramework.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ConnectionFactory\SQLServer\ConnectionLocalSql.cs" />
-    <Compile Include="Dao\Contexto\DecodedAppConfig.cs" />
     <Compile Include="Entities\AbstractClient.cs" />
     <Compile Include="Entities\Mensagem.cs" />
     <Compile Include="Entities\Parametro.cs" />
     <Compile Include="Entities\Telefone.cs" />
     <Compile Include="Entities\Endereco.cs" />
-    <Compile Include="GuiUtil\IllustrateBarItem.cs" />
-    <Compile Include="GuiUtil\IllustrateLabel.cs" />
     <Compile Include="Listeners\ActionPerformed.cs" />
     <Compile Include="Mensagem\AnimateStyle.cs" />
     <Compile Include="Mensagem\AnimeteMsgBox.cs" />
     <Compile Include="Mensagem\Buttons.cs" />
     <Compile Include="Mensagem\Icone.cs" />
     <Compile Include="Mensagem\IMessage.cs" />
-    <Compile Include="Mensagem\MessageBoxBlack.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Mensagem\MessageBoxTick.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="SchedulerControl\EntidadesBd\LogIts.cs" />
-    <Compile Include="SchedulerControl\EntidadesBd\ProcessIts.cs" />
-    <Compile Include="SchedulerControl\EntidadesBd\TaskIts.cs" />
-    <Compile Include="SchedulerControl\EntidadesBd\TaskParamIts.cs" />
-    <Compile Include="SchedulerControl\EntidadesBd\TesteEntity.cs" />
-    <Compile Include="SchedulerControl\Enumeradores\TaskStatus.cs" />
-    <Compile Include="SchedulerControl\Forms\XFrmAddNewTask.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SchedulerControl\Forms\XFrmAddNewTask.Designer.cs">
-      <DependentUpon>XFrmAddNewTask.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SchedulerControl\Forms\XFrmTaskCentral.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SchedulerControl\Forms\XFrmTaskCentral.Designer.cs">
-      <DependentUpon>XFrmTaskCentral.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SchedulerControl\Forms\XFrmTaskLogViewer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SchedulerControl\Forms\XFrmTaskLogViewer.Designer.cs">
-      <DependentUpon>XFrmTaskLogViewer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SchedulerControl\Manager\ISchedulerControl.cs" />
-    <Compile Include="SchedulerControl\Manager\SchedulerControl.cs" />
-    <Compile Include="SchedulerControl\Manager\TaskExecutor.cs" />
-    <Compile Include="SchedulerControl\Repositorio\SchedulerContext.cs" />
-    <Compile Include="SchedulerControl\Repositorio\SchedulerContextGeneric.cs" />
-    <Compile Include="Service References\WSBacen\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
     <Compile Include="Service References\WSCorreiosCep\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Ticket\Bancos\AbstractBank.cs" />
-    <Compile Include="Ticket\Bancos\BancoBancoob.cs" />
-    <Compile Include="Ticket\Bancos\BancoBradesco.cs" />
-    <Compile Include="Ticket\Bancos\BancoBrasil.cs" />
-    <Compile Include="Ticket\Bancos\BancoCaixa.cs" />
-    <Compile Include="Ticket\Bancos\BancoHSBC.cs" />
-    <Compile Include="Ticket\Bancos\BancoItau.cs" />
-    <Compile Include="Ticket\Bancos\BancoReal.cs" />
-    <Compile Include="Ticket\Bancos\BancoSafra.cs" />
-    <Compile Include="Ticket\Bancos\BancoSudameris.cs" />
-    <Compile Include="Ticket\BoletoUtil.cs" />
-    <Compile Include="Ticket\XFrmBoleto_DEV.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ticket\XFrmBoleto_DEV.designer.cs">
-      <DependentUpon>XFrmBoleto_DEV.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Ticket\XFrmProgressBoleto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ticket\XFrmProgressBoleto.designer.cs">
-      <DependentUpon>XFrmProgressBoleto.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Ticket\XFrmViewBanco.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ticket\XFrmViewBanco.Designer.cs">
-      <DependentUpon>XFrmViewBanco.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Ticket\XFrmViewBoleto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ticket\XFrmViewBoleto.designer.cs">
-      <DependentUpon>XFrmViewBoleto.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Ticket\XFrmViewBoletoBancario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ticket\XFrmViewBoletoBancario.designer.cs">
-      <DependentUpon>XFrmViewBoletoBancario.cs</DependentUpon>
     </Compile>
     <Compile Include="Util\EnumUtil.cs" />
     <Compile Include="Util\InfoSystemUtil.cs" />
@@ -588,88 +178,16 @@
     <Compile Include="Util\RedeUtil.cs" />
     <Compile Include="Util\ReflectionIts.cs" />
     <Compile Include="Util\StringExtends.cs" />
-    <Compile Include="Forms\XFrmCrudListView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\XFrmCrudListView.Designer.cs">
-      <DependentUpon>XFrmCrudListView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\XFrmScanning.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\XFrmScanning.designer.cs">
-      <DependentUpon>XFrmScanning.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\XFrmFindEntity.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\XFrmFindEntity.Designer.cs">
-      <DependentUpon>XFrmFindEntity.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\XFrmPrinterImage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\XFrmPrinterImage.designer.cs">
-      <DependentUpon>XFrmPrinterImage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\XFrmPrinterText.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\XFrmPrinterText.designer.cs">
-      <DependentUpon>XFrmPrinterText.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ProgressBar\XFrmWait.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ProgressBar\XFrmWait.Designer.cs">
-      <DependentUpon>XFrmWait.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Components\TextCodigoBarras.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Components\TextCodigoBarras.Designer.cs">
-      <DependentUpon>TextCodigoBarras.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\XFrmOptionPane.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\XFrmOptionPane.Designer.cs">
-      <DependentUpon>XFrmOptionPane.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ConnectionFactory\Oracle\ConnectionFactoryOracleIts.cs" />
-    <Compile Include="Dao\Contexto\GenericContextIts.cs" />
-    <Compile Include="Dao\Repositorio\Base\IDao.cs" />
-    <Compile Include="Dao\Repositorio\Base\EntryIts.cs" />
-    <Compile Include="Dao\Repositorio\Base\ISerializable.cs" />
     <Compile Include="Enumeradores\TypeCliente.cs" />
     <Compile Include="Enumeradores\TypeConnectionFile.cs" />
     <Compile Include="Enumeradores\TypeOrientacao.cs" />
     <Compile Include="Enumeradores\TypePrinter.cs" />
     <Compile Include="Enumeradores\TypeRotation.cs" />
-    <Compile Include="GuiUtil\AutoCompleteIts.cs" />
-    <Compile Include="ConnectionFactory\SQLServer\DataSetSql.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Components\PanelSum.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Components\PanelSum.Designer.cs">
-      <DependentUpon>PanelSum.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ConnectionFactory\ConnectionFactoryIts.cs" />
-    <Compile Include="ConnectionFactory\IConnectionFactory.cs" />
-    <Compile Include="Dao\Contexto\DbContextIts.cs" />
-    <Compile Include="Dao\Repositorio\Base\Dao.cs" />
     <Compile Include="Enumeradores\FormTypeAction.cs" />
     <Compile Include="Enumeradores\TypeConnection.cs" />
-    <Compile Include="GuiUtil\ComboBoxUtil.cs" />
-    <Compile Include="GuiUtil\ComponenteUtil.cs" />
     <Compile Include="GuiUtil\DataGridViewUtil.cs" />
     <Compile Include="GuiUtil\FormsUtil.cs" />
-    <Compile Include="GuiUtil\GridLookUpUtil.cs" />
     <Compile Include="GuiUtil\TextBoxUtil.cs" />
-    <Compile Include="GuiUtil\TextEditUtil.cs" />
-    <Compile Include="GuiUtil\GridViewUtil.cs" />
     <Compile Include="Impressora\WIAScanner.cs" />
     <Compile Include="Listeners\ActionLogin.cs" />
     <Compile Include="Mensagem\MessageIts.cs" />
@@ -685,8 +203,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Util\ConnectionDbf.cs" />
-    <Compile Include="Util\ConnectionExcel.cs" />
     <Compile Include="Util\ConnectionFile.cs" />
     <Compile Include="Util\DataUtil.cs" />
     <Compile Include="Util\ASCIIEncodingIts.cs" />
@@ -701,62 +217,6 @@
     <Compile Include="Util\StringUtilIts.cs" />
     <Compile Include="Util\TaskWatch.cs" />
     <Compile Include="Validador\ValidadorDTO.cs" />
-    <Compile Include="Web\Bacen\BacenException.cs" />
-    <Compile Include="Web\Bacen\BacenCambioException.cs" />
-    <Compile Include="Web\Bacen\CotacaoMonetaria.cs" />
-    <Compile Include="Web\Bacen\CurrencyExchange.cs" />
-    <Compile Include="Web\Bacen\IndicadoresBacen.cs" />
-    <Compile Include="Web\Bacen\CambioContext.cs" />
-    <Compile Include="Web\Bacen\Moeda.cs" />
-    <Compile Include="Enumeradores\TypeCodigoBacen.cs" />
-    <Compile Include="Web\Bacen\MoedaDaoManager.cs" />
-    <Compile Include="Web\Bacen\TypeCotacaoMonetaria.cs" />
-    <Compile Include="Web\Bacen\WSBacenCambio.cs" />
-    <Compile Include="Web\Bacen\XFrmCambio.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Web\Bacen\XFrmCambio.designer.cs">
-      <DependentUpon>XFrmCambio.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Web\Bacen\XFrmCambio_OLD.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Web\Bacen\XFrmCambio_OLD.Designer.cs">
-      <DependentUpon>XFrmCambio_OLD.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Web\Bacen\XFrmHistoricoMoedas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Web\Bacen\XFrmHistoricoMoedas.Designer.cs">
-      <DependentUpon>XFrmHistoricoMoedas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Web\Bacen\XFrmCVSTeste.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Web\Bacen\XFrmCVSTeste.Designer.cs">
-      <DependentUpon>XFrmCVSTeste.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Web\Correios\FindCepIts.cs" />
-    <Compile Include="Forms\XFrmFindCep.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\XFrmFindCep.designer.cs">
-      <DependentUpon>XFrmFindCep.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Web\HtmlUtil.cs" />
-    <Compile Include="Web\JSON\AtividadePrincipalModel.cs" />
-    <Compile Include="Web\JSON\AtividadeSecundariaModel.cs" />
-    <Compile Include="Web\JSON\Extra.cs" />
-    <Compile Include="Web\JSON\JSONHelper.cs" />
-    <Compile Include="Web\JSON\LayoutReceitaWS.cs" />
-    <Compile Include="Web\JSON\ModelLayout.cs" />
-    <Compile Include="Web\JSON\Qsa.cs" />
-    <Compile Include="Forms\XFrmWebServiceCNPJ.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\XFrmWebserviceCNPJ.Designer.cs">
-      <DependentUpon>XFrmWebServiceCNPJ.cs</DependentUpon>
-    </Compile>
     <Compile Include="XRDesignRibbonControllerResources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -781,36 +241,6 @@
     </None>
     <None Include="Properties\DataSources\ITSolution.Framework.Entities.Contato.datasource" />
     <None Include="Properties\DataSources\ITSolution.Framework.Web.Bacen.CotacaoMonetaria.datasource" />
-    <None Include="Service References\WSBacen\ITSolution.Framework.WSBacen.getUltimosValoresSerieVOResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\WSBacen\ITSolution.Framework.WSBacen.getUltimoValorVOResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\WSBacen\ITSolution.Framework.WSBacen.getUltimoValorXMLResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\WSBacen\ITSolution.Framework.WSBacen.getValorEspecialResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\WSBacen\ITSolution.Framework.WSBacen.getValoresSeriesVOResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\WSBacen\ITSolution.Framework.WSBacen.getValoresSeriesXMLResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\WSBacen\ITSolution.Framework.WSBacen.getValorResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\WSBacen\ITSolution.Framework.WSBacen.WSSerieVO.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\WSBacen\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Service References\WSBacen\configuration.svcinfo" />
-    <None Include="Service References\WSBacen\configuration91.svcinfo" />
     <None Include="Resources\one_dollar.jpg" />
     <None Include="Resources\santander.jpg" />
     <None Include="Resources\itau_orange.png" />
@@ -841,7 +271,6 @@
     <None Include="Resources\wallpaper_medicina.jpeg" />
     <None Include="Resources\windows-10-4k-wallpapers.jpg" />
     <None Include="Resources\title_bar.png" />
-    <None Include="Service References\WSBacen\FachadaWSSGS.wsdl" />
     <None Include="Service References\WSCorreiosCep\ITSolution.Framework.WSCorreiosCep.assuntoPIMaster.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -996,7 +425,6 @@
     <None Include="Resources\scanner_advanced_32x32.ico" />
     <None Include="Resources\scanner_advanced_16x16.ico" />
     <None Include="Service References\WSCorreiosCep\AtendeClienteService.wsdl" />
-    <None Include="Ticket\Boleto.Net.Arquivo_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Annotations\ContexExample.txt" />
@@ -1009,150 +437,15 @@
     <None Include="Resources\index_32x32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="BaseForms\ITSAncestorDesktop.resx">
-      <DependentUpon>ITSAncestorDesktop.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BaseForms\ITSBasicJobForm.resx">
-      <DependentUpon>ITSBasicJobForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BaseForms\ITSDBTransaction.resx">
-      <DependentUpon>ITSDBTransaction.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BaseForms\ITSTransaction.resx">
-      <DependentUpon>ITSTransaction.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Components\CepControl.resx">
-      <DependentUpon>CepControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Components\CpfCnpjControl.resx">
-      <DependentUpon>CpfCnpjControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\XFrmContato.resx">
-      <DependentUpon>XFrmContato.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\XFrmAgendaContatos.resx">
-      <DependentUpon>XFrmAgendaContatos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\XFrmBackupSQL.resx">
-      <DependentUpon>XFrmBackupSQL.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\XFrmExcelManager.resx">
-      <DependentUpon>XFrmExcelManager.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\XFrmHighlighting.resx">
-      <DependentUpon>XFrmHighlighting.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\XFrmLembrete.resx">
-      <DependentUpon>XFrmLembrete.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\XFrmLoginRestrito.resx">
-      <DependentUpon>XFrmLoginRestrito.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\XFrmLogin.resx">
-      <DependentUpon>XFrmLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\XFrmCrudListView.resx">
-      <DependentUpon>XFrmCrudListView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\XFrmScanning.resx">
-      <DependentUpon>XFrmScanning.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\XFrmFindEntity.resx">
-      <DependentUpon>XFrmFindEntity.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\XFrmPdfConvertToText.resx">
-      <DependentUpon>XFrmPdfConvertToText.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\XFrmPrinterImage.resx">
-      <DependentUpon>XFrmPrinterImage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\XFrmPrinterText.resx">
-      <DependentUpon>XFrmPrinterText.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\XFrmRestoreBackupSQL.resx">
-      <DependentUpon>XFrmRestoreBackupSQL.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\XFrmClienteView.resx">
-      <DependentUpon>XFrmClienteView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Mensagem\MessageBoxException.resx">
-      <DependentUpon>MessageBoxException.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Mensagem\MessageBoxTick.resx">
-      <DependentUpon>MessageBoxTick.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ProgressBar\WaitEntityFramework.resx">
-      <DependentUpon>WaitEntityFramework.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ProgressBar\XFrmEntityFramework.resx">
-      <DependentUpon>XFrmEntityFramework.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\XFrmLogoIts.resx">
-      <DependentUpon>XFrmLogoIts.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ProgressBar\XFrmWait.resx">
-      <DependentUpon>XFrmWait.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\XFrmOptionPane.resx">
-      <DependentUpon>XFrmOptionPane.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Components\PanelSum.resx">
-      <DependentUpon>PanelSum.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Mensagem\MessageBoxBlack.resx">
-      <DependentUpon>MessageBoxBlack.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="PrintRibbonControllerResources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>PrintRibbonControllerResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\XFrmFindCep.resx">
-      <DependentUpon>XFrmFindCep.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\XFrmWebserviceCNPJ.resx">
-      <DependentUpon>XFrmWebServiceCNPJ.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SchedulerControl\Forms\XFrmAddNewTask.resx">
-      <DependentUpon>XFrmAddNewTask.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SchedulerControl\Forms\XFrmTaskCentral.resx">
-      <DependentUpon>XFrmTaskCentral.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SchedulerControl\Forms\XFrmTaskLogViewer.resx">
-      <DependentUpon>XFrmTaskLogViewer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ticket\XFrmBoleto_DEV.resx">
-      <DependentUpon>XFrmBoleto_DEV.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ticket\XFrmProgressBoleto.resx">
-      <DependentUpon>XFrmProgressBoleto.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ticket\XFrmViewBanco.resx">
-      <DependentUpon>XFrmViewBanco.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ticket\XFrmViewBoleto.resx">
-      <DependentUpon>XFrmViewBoleto.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ticket\XFrmViewBoletoBancario.resx">
-      <DependentUpon>XFrmViewBoletoBancario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Web\Bacen\XFrmCambio.resx">
-      <DependentUpon>XFrmCambio.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Web\Bacen\XFrmCambio_OLD.resx">
-      <DependentUpon>XFrmCambio_OLD.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Web\Bacen\XFrmHistoricoMoedas.resx">
-      <DependentUpon>XFrmHistoricoMoedas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Web\Bacen\XFrmCVSTeste.resx">
-      <DependentUpon>XFrmCVSTeste.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XRDesignRibbonControllerResources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -1178,13 +471,9 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\WSBacen\" />
     <WCFMetadataStorage Include="Service References\WSCorreiosCep\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="SqlServerTypes\" />
-    <Folder Include="Ticket\EspeciesDocumentos\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Common\ITSolution.Framework.Common\ITSolution.Framework.Common.csproj">
       <Project>{6228c23a-3c31-4f75-b4a4-e07f159a38a8}</Project>

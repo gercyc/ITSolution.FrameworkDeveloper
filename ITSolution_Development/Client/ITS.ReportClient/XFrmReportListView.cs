@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ITSolution.Framework.Beans.ProgressBar;
 using ITSolution.Framework.GuiUtil;
 using ITSolution.Framework.Mensagem;
 

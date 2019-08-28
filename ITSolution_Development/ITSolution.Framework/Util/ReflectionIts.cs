@@ -4,7 +4,6 @@ using System.ComponentModel;
 using System.Reflection;
 using System.Text;
 using System.Windows.Forms;
-using DevExpress.XtraEditors;
 using ITSolution.Framework.Arquivos;
 using ITSolution.Framework.Mensagem;
 
@@ -197,82 +196,8 @@ namespace ITSolution.Framework.Util
             return lista.ToArray();
         }
 
-        /// <summary>
-        /// Gera DTO de todos os componentes do Form
-        /// </summary>
-        /// <param name="form"></param>
-        public static void ShowComponentsFromGroupControl(Form form, bool convertToDecimal = false)
-        {
-            var sb = new StringBuilder();
 
-            foreach (var form_control in form.Controls)
-            {
-                if (form_control is DevExpress.XtraEditors.GroupControl)
-                {
-                    var group = form_control as DevExpress.XtraEditors.GroupControl;
 
-                    foreach (var baseEdit in group.Controls)
-                    {
-                        if (baseEdit is DevExpress.XtraEditors.BaseEdit)
-                        {
-                            setPropStringBaseEdit(baseEdit, sb, convertToDecimal);
-                        }
-                    }
-                }
-              
-                else if (form_control is DevExpress.XtraEditors.BaseEdit)
-                {
-                    setPropStringBaseEdit(form_control, sb, convertToDecimal);
-                }
-                else if (form_control is XtraUserControl)
-                {
-                    setPropXtraUserControl(form_control, sb);
-                }
-            }
-
-            showResultBuilder(sb);
-
-        }
-
-        /// <summary>
-        /// Gera DTO de todos os componentes do TabPane
-        /// </summary>
-        /// <param name="form"></param>
-        public static void ShowComponentsFromTabPaneForm(Form form, bool convertToDecimal = false)
-        {
-            var sb = new StringBuilder();
-
-            foreach (var form_control in form.Controls)
-            {
-                if (form_control is DevExpress.XtraBars.Navigation.TabPane)
-                {
-                    var tab = form_control as DevExpress.XtraBars.Navigation.TabPane;
-                    foreach (var control in tab.Controls)
-                    {
-                        var navPage = control as DevExpress.XtraBars.Navigation.TabNavigationPage;
-
-                        foreach (var nav in navPage.Controls)
-                        {
-                            if (nav is DevExpress.XtraEditors.BaseEdit)
-                            {
-                                setPropStringBaseEdit(nav, sb);
-                            }
-                        }
-                    }
-                }
-                else if (form_control is XtraUserControl)
-                {
-                    setPropXtraUserControl(form_control, sb);
-                }
-                else if (form_control is DevExpress.XtraEditors.BaseEdit)
-                {
-                    setPropStringBaseEdit(form_control, sb, convertToDecimal);
-                }
-
-            }
-            showResultBuilder(sb);
-
-        }
 
         private static void showResultBuilder(StringBuilder sb)
         {
@@ -282,93 +207,5 @@ namespace ITSolution.Framework.Util
             FileManagerIts.AppendLines(file, sb.ToString());
             FileManagerIts.OpenFromSystem(file);
         }
-
-        private static void setPropStringBaseEdit(object o, StringBuilder sb, bool convertToDecimal = false)
-        {
-            //chaves
-            string[] keys = new string[] { "txt", "textEdit",
-                                            "rd","radioGroup",
-                                            "cb", "comboEdit",
-                                                "checkEdit",
-                                                "buttonEdit",
-                                                "memoEdit",
-                                                "spinneEdit" };
-
-            var baseEdit = o as DevExpress.XtraEditors.BaseEdit;
-            var name = baseEdit.Name;
-
-            foreach (var key in keys)
-            {
-                name = name.Replace(key, "").FirstCharToLower();
-            }
-
-            //somente textEdit entra aqui
-            if (convertToDecimal &&  o.GetType() == typeof( DevExpress.XtraEditors.TextEdit))
-            {
-                sb.Append("decimal ");
-                sb.Append(name);
-                sb.Append(" = ");
-                sb.Append("ParseUtil.ToDecimal(");
-                sb.Append(baseEdit.Name);
-                sb.Append(".Text");
-                sb.Append(")");
-            }
-            else if (o.GetType() == typeof( DevExpress.XtraEditors.CheckEdit))
-            {
-                sb.Append("bool ");
-                sb.Append(name);
-                sb.Append(" = ");
-                sb.Append(baseEdit.Name);
-                sb.Append(".Checked");
-            }
-
-            else if (o.GetType() == typeof(DevExpress.XtraEditors.RadioGroup))
-            {
-                sb.Append("int ");
-                sb.Append(name);
-                sb.Append(" = ");
-                sb.Append(baseEdit.Name);
-                sb.Append(".SelectedIndex");
-            }
-            else
-            {
-                sb.Append("string ");
-                sb.Append(name);
-                sb.Append(" = ");
-                sb.Append(baseEdit.Name);
-                sb.Append(".Text");
-            }
-            sb.Append(";\n");
-        }
-
-        private static void setPropXtraUserControl(object o, StringBuilder sb)
-        {
-            string[] keys = new string[] { "lookUp" };
-            string[] nums = new string[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" };
-
-            var comp = o as XtraUserControl;
-            var name = comp.Name;
-            var prop = name;
-
-            foreach (var key in keys)
-            {
-                name = name.Replace(key, "").FirstCharToLower();
-                prop = prop.Replace(key, "");
-            }
-            foreach (var n in nums)
-            {
-                name = name.Replace(n, "").FirstCharToLower();
-                prop = prop.Replace(n, "");
-            }
-            sb.Append(prop);
-            sb.Append(" ");
-            sb.Append(name);
-            sb.Append(" = ");
-            sb.Append(comp.Name);
-            sb.Append(".");
-            sb.Append(prop);
-            sb.Append(";\n");
-        }
-
     }
 }

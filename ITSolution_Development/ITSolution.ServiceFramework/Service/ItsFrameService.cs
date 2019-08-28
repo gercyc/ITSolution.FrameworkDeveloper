@@ -13,8 +13,8 @@ namespace ITSolution.ServiceFramework.Service
 {
     public class ItsFrameService : ServiceBase
     {
-        ReportServer rptServer;
-        JobServer jobServer;
+        //ReportServer rptServer;
+        //JobServer jobServer;
 
         public ItsFrameService()
         {
@@ -23,19 +23,19 @@ namespace ITSolution.ServiceFramework.Service
 
         protected override void OnStart(string[] args)
         {
-            this.rptServer = new ReportServer(new Uri("http://localhost:9090/reports"));
-            rptServer.Start();
+            //this.rptServer = new ReportServer(new Uri("http://localhost:9090/reports"));
+            //rptServer.Start();
 
-            this.jobServer = new JobServer(new Uri("http://localhost:9090/scheduler"));
-            jobServer.Start();
+            //this.jobServer = new JobServer(new Uri("http://localhost:9090/scheduler"));
+            //jobServer.Start();
 
             //base.OnStart(args);
             //ItsFrameService<T>.Run();
         }
         protected override void OnStop()
         {
-            rptServer.Close();
-            jobServer.Close();
+            //rptServer.Close();
+            //jobServer.Close();
             //base.OnStop();
 
         }

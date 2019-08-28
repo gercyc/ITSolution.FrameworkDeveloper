@@ -26,7 +26,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\..\..\..\..\..\ITSolution\Framework\</OutputPath>
+    <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -84,6 +84,10 @@
     <ProjectReference Include="..\..\ITSolution.Reports\ITSolution.Reports.csproj">
       <Project>{4261d396-89dd-45a3-adbe-93e49502b0de}</Project>
       <Name>ITSolution.Reports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ITSolution.Framework.Server\ITSolution.Framework.Server.csproj">
+      <Project>{e9aa14d4-7c4a-4735-88b4-7c5ec98b2b3c}</Project>
+      <Name>ITSolution.Framework.Server</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

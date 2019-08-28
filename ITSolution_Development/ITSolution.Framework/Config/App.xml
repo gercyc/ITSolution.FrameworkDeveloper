@@ -4,6 +4,7 @@
   <serverType typeName="MSSQL" />
   <defaultConnection name="Dev" />
   <serverPort name ="9000"/>
+  <AssemblyRegisterServices name ="ITSolution.Framework.BaseClasses.RegisterServices.RegisterServices"/>
   <connectionStrings>
     <!--Azure Database to Developer-->
     <connection name="ITS" serverName="itsolution.database.windows.net" database="db_ITE" user="itsadmin" password="SXRzMTIzNCU=" security="false" />

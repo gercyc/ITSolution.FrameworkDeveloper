@@ -409,6 +409,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Client\ITSolution.Windows.Forms\ITSolution.Framework.Windows.Forms.csproj">
+      <Project>{b61aae25-3fd3-4b22-9ab1-3410b4d237f3}</Project>
+      <Name>ITSolution.Framework.Windows.Forms</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Common\ITSolution.Framework.Common\ITSolution.Framework.Common.csproj">
       <Project>{6228C23A-3C31-4F75-B4A4-E07F159A38A8}</Project>
       <Name>ITSolution.Framework.Common</Name>
@@ -417,6 +421,10 @@
       <Project>{a5a1a9bb-6c1b-4a0b-867b-e59132fc51b9}</Project>
       <Name>ITSolution.Framework</Name>
       <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Servers\ITSolution.Framework.Server\ITSolution.Framework.Server.csproj">
+      <Project>{e9aa14d4-7c4a-4735-88b4-7c5ec98b2b3c}</Project>
+      <Name>ITSolution.Framework.Server</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

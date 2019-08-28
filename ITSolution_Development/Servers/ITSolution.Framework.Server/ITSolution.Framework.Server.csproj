@@ -25,7 +25,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\..\..\..\..\..\ITSolution\Framework\</OutputPath>
+    <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -39,8 +39,28 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Dashboard.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Linq.Dynamic, Version=1.0.6132.35681, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Linq.Dynamic.1.0.7\lib\net40\System.Linq.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,6 +69,67 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseClasses\ConnectionFactory\Access\ConnectionFactoryAccess.cs" />
+    <Compile Include="BaseClasses\ConnectionFactory\ConnectionFactoryIts.cs" />
+    <Compile Include="BaseClasses\ConnectionFactory\IConnectionFactory.cs" />
+    <Compile Include="BaseClasses\ConnectionFactory\ITransactionSql.cs" />
+    <Compile Include="BaseClasses\ConnectionFactory\MySQL\ConnectionMySqlIts.cs" />
+    <Compile Include="BaseClasses\ConnectionFactory\Oracle\ConnectionFactoryOracleIts.cs" />
+    <Compile Include="BaseClasses\ConnectionFactory\SQLServer\BackupSql.cs" />
+    <Compile Include="BaseClasses\ConnectionFactory\SQLServer\ConnectionLocalSql.cs" />
+    <Compile Include="BaseClasses\ConnectionFactory\SQLServer\DataSetSql.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseClasses\ConnectionFactory\SQLServer\RestoreBackupSql.cs" />
+    <Compile Include="BaseClasses\ConnectionFactory\SQLServer\SqlUtil.cs" />
+    <Compile Include="BaseClasses\Dao\Contexto\AppConfigDefaultManager.cs" />
+    <Compile Include="BaseClasses\Dao\Contexto\CambioContext.cs" />
+    <Compile Include="BaseClasses\Dao\Contexto\ContatoDaoManager.cs" />
+    <Compile Include="BaseClasses\Dao\Contexto\DbContextIts.cs" />
+    <Compile Include="BaseClasses\Dao\Contexto\GenericContextIts.cs" />
+    <Compile Include="BaseClasses\Dao\Contexto\ITSolutionContext.cs" />
+    <Compile Include="BaseClasses\Dao\Contexto\LembreteDaoManager.cs" />
+    <Compile Include="BaseClasses\Dao\Contexto\ParametroManager.cs" />
+    <Compile Include="BaseClasses\Dao\Repositorio\Base\Dao.cs" />
+    <Compile Include="BaseClasses\Dao\Repositorio\Base\EntryIts.cs" />
+    <Compile Include="BaseClasses\Dao\Repositorio\Base\IDao.cs" />
+    <Compile Include="BaseClasses\Dao\Repositorio\Base\ISerializable.cs" />
+    <Compile Include="BaseClasses\DefaultServer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseClasses\DefaultServer.Designer.cs">
+      <DependentUpon>DefaultServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseClasses\LicenseDaoManager.cs" />
+    <Compile Include="BaseClasses\SchedulerControl\EntidadesBd\LogIts.cs" />
+    <Compile Include="BaseClasses\SchedulerControl\EntidadesBd\ProcessIts.cs" />
+    <Compile Include="BaseClasses\SchedulerControl\EntidadesBd\TaskIts.cs" />
+    <Compile Include="BaseClasses\SchedulerControl\EntidadesBd\TaskParamIts.cs" />
+    <Compile Include="BaseClasses\SchedulerControl\EntidadesBd\TesteEntity.cs" />
+    <Compile Include="BaseClasses\SchedulerControl\Enumeradores\TaskStatus.cs" />
+    <Compile Include="BaseClasses\SchedulerControl\Manager\ISchedulerControl.cs" />
+    <Compile Include="BaseClasses\SchedulerControl\Manager\SchedulerControl.cs" />
+    <Compile Include="BaseClasses\SchedulerControl\Manager\TaskExecutor.cs" />
+    <Compile Include="BaseClasses\SchedulerControl\Repositorio\SchedulerContext.cs" />
+    <Compile Include="BaseClasses\SchedulerControl\Repositorio\SchedulerContextGeneric.cs" />
+    <Compile Include="BaseForms\WaitEntityFramework.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForms\WaitEntityFramework.Designer.cs">
+      <DependentUpon>WaitEntityFramework.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForms\XFrmEntityFramework.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForms\XFrmEntityFramework.Designer.cs">
+      <DependentUpon>XFrmEntityFramework.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForms\XFrmWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForms\XFrmWait.Designer.cs">
+      <DependentUpon>XFrmWait.cs</DependentUpon>
+    </Compile>
     <Compile Include="ITSFrameworkServerController.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -66,6 +147,27 @@
       <Project>{A5A1A9BB-6C1B-4A0B-867B-E59132FC51B9}</Project>
       <Name>ITSolution.Framework</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BaseInterfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaseForms\WaitEntityFramework.resx">
+      <DependentUpon>WaitEntityFramework.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForms\XFrmEntityFramework.resx">
+      <DependentUpon>XFrmEntityFramework.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForms\XFrmWait.resx">
+      <DependentUpon>XFrmWait.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

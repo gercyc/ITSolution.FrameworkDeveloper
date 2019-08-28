@@ -1,5 +1,4 @@
-﻿using DevExpress.XtraEditors;
-using ITSolution.Framework.Arquivos;
+﻿using ITSolution.Framework.Arquivos;
 using System;
 using System.Windows.Forms;
 
@@ -30,7 +29,7 @@ namespace ITSolution.Framework.Mensagem
             }
 
             // igual ao information MessageBoxIcon.Asterisk
-            XtraMessageBox.Show(message.ToString(), TITLE, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(message.ToString(), TITLE, MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
         }
@@ -46,7 +45,7 @@ namespace ITSolution.Framework.Mensagem
             {
                 message = "null";
             }
-            XtraMessageBox.Show(message.ToString(), title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(message.ToString(), title, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         /// <summary>
@@ -60,7 +59,7 @@ namespace ITSolution.Framework.Mensagem
             {
                 message = "null";
             }
-            XtraMessageBox.Show(message.ToString(), TITLE, MessageBoxButtons.OK, icone);
+            MessageBox.Show(message.ToString(), TITLE, MessageBoxButtons.OK, icone);
         }
 
         /// <summary>
@@ -71,7 +70,7 @@ namespace ITSolution.Framework.Mensagem
         /// <param name="icone"></param>
         public static void Mensagem(object message, string title, MessageBoxIcon icone)
         {
-            XtraMessageBox.Show(message.ToString(), title, MessageBoxButtons.OK, icone);
+            MessageBox.Show(message.ToString(), title, MessageBoxButtons.OK, icone);
         }
 
         /// <summary>
@@ -85,7 +84,7 @@ namespace ITSolution.Framework.Mensagem
                 message = "null";
             }
             //sao iguais MessageBoxIcon.Exclamation);
-            XtraMessageBox.Show(message.ToString(), TITLE, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show(message.ToString(), TITLE, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
         }
 
@@ -101,7 +100,7 @@ namespace ITSolution.Framework.Mensagem
                 message = "null";
             }
             //sao iguais MessageBoxIcon.Exclamation);
-            XtraMessageBox.Show(message.ToString(), title, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show(message.ToString(), title, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
         }
 
@@ -116,7 +115,7 @@ namespace ITSolution.Framework.Mensagem
             {
                 message = "";
             }
-            DialogResult result = XtraMessageBox.Show(message.ToString(), TITLE,
+            DialogResult result = MessageBox.Show(message.ToString(), TITLE,
                  MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             return result;
@@ -136,7 +135,7 @@ namespace ITSolution.Framework.Mensagem
                 message = "";
             }
             DialogResult result =
-                 XtraMessageBox.Show(message.ToString(), title, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                 MessageBox.Show(message.ToString(), title, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             return result;
         }
@@ -153,7 +152,7 @@ namespace ITSolution.Framework.Mensagem
             }
             //sao iguais MessageBoxIcon.Hand
             //          MessageBoxIcon.Stop
-            XtraMessageBox.Show(message.ToString(), TITLE, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show(message.ToString(), TITLE, MessageBoxButtons.OK, MessageBoxIcon.Error);
 
         }
 
@@ -170,7 +169,7 @@ namespace ITSolution.Framework.Mensagem
             }
             //sao iguais MessageBoxIcon.Hand
             //          MessageBoxIcon.Stop
-            XtraMessageBox.Show(message.ToString(), title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show(message.ToString(), title, MessageBoxButtons.OK, MessageBoxIcon.Error);
 
         }
 
@@ -185,7 +184,7 @@ namespace ITSolution.Framework.Mensagem
             {
                 message = "null";
             }
-            XtraMessageBox.Show(message.ToString(), title, MessageBoxButtons.OK, MessageBoxIcon.None);
+            MessageBox.Show(message.ToString(), title, MessageBoxButtons.OK, MessageBoxIcon.None);
         }
 
         /// <summary>
@@ -198,7 +197,7 @@ namespace ITSolution.Framework.Mensagem
             {
                 ex = new Exception("Mensageiro recebeu uma exceção não identificada");
             }
-            XtraMessageBox.Show(ex.Message +
+            MessageBox.Show(ex.Message +
                 "\nPilha de erros:\n " + ex.StackTrace
                 + "\nExceção Interna:\n" + ex.InnerException,
                 TITLE, MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -226,9 +225,9 @@ namespace ITSolution.Framework.Mensagem
             string msg = ex.Message + "\n" + inner;
 
             if (message == null)
-                XtraMessageBox.Show(msg, title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(msg, title, MessageBoxButtons.OK, MessageBoxIcon.Error);
             else
-                XtraMessageBox.Show(message + " " + msg + "\n", title,
+                MessageBox.Show(message + " " + msg + "\n", title,
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
@@ -244,7 +243,7 @@ namespace ITSolution.Framework.Mensagem
             {
                 ex = new Exception("Mensageiro recebeu uma exceção não identificada");
             }
-            XtraMessageBox.Show(message + "\n\n" + ex.Message + "\nPilha de erros::\n " + ex.StackTrace,
+            MessageBox.Show(message + "\n\n" + ex.Message + "\nPilha de erros::\n " + ex.StackTrace,
                 title, MessageBoxButtons.OK, MessageBoxIcon.Stop);
         }
 
@@ -271,8 +270,8 @@ namespace ITSolution.Framework.Mensagem
             FileManagerIts.CreateDirectory(logs);
             FileManagerIts.AppendTextFileException(logs + "\\" + ex.GetType()
                 + "-" + DateTime.Now.ToString("dd-MM-yyyy") + ".txt", ex);
-
-            MessageBoxException.ShowException(message, ex, title);
+            //refazer no WinForms nativo
+            MessageBox.Show(message);
 
         }
 

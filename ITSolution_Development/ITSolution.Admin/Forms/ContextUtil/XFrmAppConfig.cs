@@ -10,6 +10,7 @@ using System.Data;
 using ITSolution.Framework.Dao.Contexto;
 using ITSolution.Framework.Mensagem;
 using ITSolution.Framework.Arquivos;
+using ITSolution.Framework.Common.BaseClasses.CommonEntities;
 
 namespace ITSolution.Admin.Forms.ContextUtil
 {

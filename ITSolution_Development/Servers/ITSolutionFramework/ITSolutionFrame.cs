@@ -1,8 +1,7 @@
 ﻿using ITSolution.Framework.BaseClasses;
+using ITSolution.Framework.BaseClasses.RegisterServices;
 using ITSolution.Framework.BaseClasses.Trace;
 using ITSolution.Framework.Common.BaseClasses;
-using ITSolution.Scheduler.Forms;
-using ITSolution.ServiceFramework.BaseClasses;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -46,8 +45,8 @@ namespace ITSolutionFramework
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
-            XFrmTaskCentral xFrmTaskCentral = new XFrmTaskCentral();
-            xFrmTaskCentral.Show();
+            //XFrmTaskCentral xFrmTaskCentral = new XFrmTaskCentral();
+            //xFrmTaskCentral.Show();
 
         }
         private void WriteText(string _sessionID, TraceClass tracedata)

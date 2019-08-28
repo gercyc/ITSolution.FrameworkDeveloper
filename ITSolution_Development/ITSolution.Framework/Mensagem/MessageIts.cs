@@ -7,7 +7,7 @@ namespace ITSolution.Framework.Mensagem
     /// <summary>
     /// Mensagem prontas usando System.Windows.Forms
     /// </summary>
-    class MessageIts
+    public class MessageIts
     {
         private static String TITULO = "Mensagem";
 

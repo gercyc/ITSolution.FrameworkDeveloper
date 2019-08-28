@@ -94,7 +94,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseClasses\RegisterServices.cs" />
     <Compile Include="ItsServiceframe.cs">
       <SubType>Form</SubType>
     </Compile>

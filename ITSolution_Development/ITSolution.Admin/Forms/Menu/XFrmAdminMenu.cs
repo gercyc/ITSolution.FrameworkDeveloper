@@ -18,6 +18,7 @@ using ITSolution.Framework.Common.BaseClasses.Reports.Enumeradores;
 using ITSolution.Framework.BaseInterfaces;
 using DevExpress.XtraBars.Ribbon;
 using ITSolution.Framework.BaseClasses;
+using ITSolution.Framework.Windows.BaseForms;
 
 namespace ITSolution.Admin.Forms.Menu
 {

@@ -1,4 +1,5 @@
-﻿using ITSolution.Framework.Entities;
+﻿using ITSolution.Framework.Common.BaseClasses.CommonEntities;
+using ITSolution.Framework.Entities;
 
 namespace ITSolution.Admin.Launcher
 {

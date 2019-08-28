@@ -17,6 +17,7 @@ using ITSolution.Admin.Repositorio;
 using ITSolution.Framework.Arquivos;
 using ITSolution.Framework.Forms;
 using ITSolution.Framework.BaseClasses;
+using ITSolution.Framework.Windows.BaseForms;
 
 //Essa classe nao esta padronizada
 namespace ITSolution.Admin.Launcher

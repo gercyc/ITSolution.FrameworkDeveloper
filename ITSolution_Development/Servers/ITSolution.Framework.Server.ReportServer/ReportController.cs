@@ -48,7 +48,7 @@ namespace ITSolution.Framework.Server.ReportServer
             }
         }
 
-        public XtraReport GetReport(int idReport)
+        public object GetReport(int idReport)
         {
             using (var ctx = new ReportContext())
             {

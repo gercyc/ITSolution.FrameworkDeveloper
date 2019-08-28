@@ -5,11 +5,11 @@ VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSolution.Framework", "ITSolution.Framework\ITSolution.Framework.csproj", "{A5A1A9BB-6C1B-4A0B-867B-E59132FC51B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSolution.Reports", "ITSolution.Reports\ITSolution.Reports.csproj", "{4261D396-89DD-45A3-ADBE-93E49502B0DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSolution.Framework.Reports", "ITSolution.Reports\ITSolution.Framework.Reports.csproj", "{4261D396-89DD-45A3-ADBE-93E49502B0DE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSolution.Teste", "ITSolution.Teste\ITSolution.Teste.csproj", "{47D6A70B-AD03-41EC-B346-97E64F5FCFEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSolution.Admin", "ITSolution.Admin\ITSolution.Admin.csproj", "{20FB03C3-EE36-4784-A4C4-BD1FBA716548}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSolution.Framework.Admin", "ITSolution.Admin\ITSolution.Framework.Admin.csproj", "{20FB03C3-EE36-4784-A4C4-BD1FBA716548}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSolution.ServiceFramework", "ITSolution.ServiceFramework\ITSolution.ServiceFramework.csproj", "{563E79B7-92C9-48F3-9AA2-FAAB8F3CBD5F}"
 EndProject

@@ -152,9 +152,9 @@
       <Project>{a5a1a9bb-6c1b-4a0b-867b-e59132fc51b9}</Project>
       <Name>ITSolution.Framework</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ITSolution.Reports\ITSolution.Reports.csproj">
+    <ProjectReference Include="..\ITSolution.Reports\ITSolution.Framework.Reports.csproj">
       <Project>{4261d396-89dd-45a3-adbe-93e49502b0de}</Project>
-      <Name>ITSolution.Reports</Name>
+      <Name>ITSolution.Framework.Reports</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ITSolution.Reports.ReportServer {
+namespace ITSolution.Framework.Reports.ReportServer {
     using System.Runtime.Serialization;
     using System;
     
@@ -17,16 +17,16 @@ namespace ITSolution.Reports.ReportServer {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ReportImage", Namespace="http://schemas.datacontract.org/2004/07/ITSolution.Reports.Entidades")]
     [System.SerializableAttribute()]
-    public partial class ReportImage : ITSolution.Reports.ReportServer.AbstractReportImage {
+    public partial class ReportImage : ITSolution.Framework.Reports.ReportServer.AbstractReportImage {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ITSolution.Reports.ReportServer.ReportDataSource[] DatasourcesField;
+        private ITSolution.Framework.Reports.ReportServer.ReportDataSource[] DatasourcesField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int IdReportField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public ITSolution.Reports.ReportServer.ReportDataSource[] Datasources {
+        public ITSolution.Framework.Reports.ReportServer.ReportDataSource[] Datasources {
             get {
                 return this.DatasourcesField;
             }
@@ -56,14 +56,14 @@ namespace ITSolution.Reports.ReportServer {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AbstractReportImage", Namespace="http://schemas.datacontract.org/2004/07/ITSolution.Reports.Entidades")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(ITSolution.Reports.ReportServer.ReportImage))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(ITSolution.Framework.Reports.ReportServer.ReportImage))]
     public partial class AbstractReportImage : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ITSolution.Reports.ReportServer.ReportGroup GrupoField;
+        private ITSolution.Framework.Reports.ReportServer.ReportGroup GrupoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int IdGrpReportField;
@@ -85,7 +85,7 @@ namespace ITSolution.Reports.ReportServer {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public ITSolution.Reports.ReportServer.ReportGroup Grupo {
+        public ITSolution.Framework.Reports.ReportServer.ReportGroup Grupo {
             get {
                 return this.GrupoField;
             }
@@ -217,7 +217,7 @@ namespace ITSolution.Reports.ReportServer {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ITSolution.Reports.ReportServer.SqlQueryIts ConsultaField;
+        private ITSolution.Framework.Reports.ReportServer.SqlQueryIts ConsultaField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool DatamemberField;
@@ -232,7 +232,7 @@ namespace ITSolution.Reports.ReportServer {
         private int IdReportField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ITSolution.Reports.ReportServer.ReportImage ReportImageField;
+        private ITSolution.Framework.Reports.ReportServer.ReportImage ReportImageField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -245,7 +245,7 @@ namespace ITSolution.Reports.ReportServer {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public ITSolution.Reports.ReportServer.SqlQueryIts Consulta {
+        public ITSolution.Framework.Reports.ReportServer.SqlQueryIts Consulta {
             get {
                 return this.ConsultaField;
             }
@@ -310,7 +310,7 @@ namespace ITSolution.Reports.ReportServer {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public ITSolution.Reports.ReportServer.ReportImage ReportImage {
+        public ITSolution.Framework.Reports.ReportServer.ReportImage ReportImage {
             get {
                 return this.ReportImageField;
             }
@@ -480,19 +480,19 @@ namespace ITSolution.Reports.ReportServer {
         System.Threading.Tasks.Task ShowReportListAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReportContract/GetAllReports", ReplyAction="http://tempuri.org/IReportContract/GetAllReportsResponse")]
-        ITSolution.Reports.ReportServer.ReportImage[] GetAllReports();
+        ITSolution.Framework.Reports.ReportServer.ReportImage[] GetAllReports();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReportContract/GetAllReports", ReplyAction="http://tempuri.org/IReportContract/GetAllReportsResponse")]
-        System.Threading.Tasks.Task<ITSolution.Reports.ReportServer.ReportImage[]> GetAllReportsAsync();
+        System.Threading.Tasks.Task<ITSolution.Framework.Reports.ReportServer.ReportImage[]> GetAllReportsAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReportContract/GetReport", ReplyAction="http://tempuri.org/IReportContract/GetReportResponse")]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ITSolution.Reports.ReportServer.ReportImage[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ITSolution.Reports.ReportServer.ReportImage))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ITSolution.Reports.ReportServer.AbstractReportImage))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ITSolution.Reports.ReportServer.ReportGroup))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ITSolution.Reports.ReportServer.ReportDataSource[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ITSolution.Reports.ReportServer.ReportDataSource))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ITSolution.Reports.ReportServer.SqlQueryIts))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ITSolution.Framework.Reports.ReportServer.ReportImage[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ITSolution.Framework.Reports.ReportServer.ReportImage))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ITSolution.Framework.Reports.ReportServer.AbstractReportImage))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ITSolution.Framework.Reports.ReportServer.ReportGroup))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ITSolution.Framework.Reports.ReportServer.ReportDataSource[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ITSolution.Framework.Reports.ReportServer.ReportDataSource))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ITSolution.Framework.Reports.ReportServer.SqlQueryIts))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(object[]))]
         object[] GetReport(int idReport);
         
@@ -501,12 +501,12 @@ namespace ITSolution.Reports.ReportServer {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IReportContractChannel : ITSolution.Reports.ReportServer.IReportContract, System.ServiceModel.IClientChannel {
+    public interface IReportContractChannel : ITSolution.Framework.Reports.ReportServer.IReportContract, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class ReportContractClient : System.ServiceModel.ClientBase<ITSolution.Reports.ReportServer.IReportContract>, ITSolution.Reports.ReportServer.IReportContract {
+    public partial class ReportContractClient : System.ServiceModel.ClientBase<ITSolution.Framework.Reports.ReportServer.IReportContract>, ITSolution.Framework.Reports.ReportServer.IReportContract {
         
         public ReportContractClient() {
         }
@@ -551,11 +551,11 @@ namespace ITSolution.Reports.ReportServer {
             return base.Channel.ShowReportListAsync();
         }
         
-        public ITSolution.Reports.ReportServer.ReportImage[] GetAllReports() {
+        public ITSolution.Framework.Reports.ReportServer.ReportImage[] GetAllReports() {
             return base.Channel.GetAllReports();
         }
         
-        public System.Threading.Tasks.Task<ITSolution.Reports.ReportServer.ReportImage[]> GetAllReportsAsync() {
+        public System.Threading.Tasks.Task<ITSolution.Framework.Reports.ReportServer.ReportImage[]> GetAllReportsAsync() {
             return base.Channel.GetAllReportsAsync();
         }
         

@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{2BA38B19-58CA-44BC-9341-CEF567ECE5A0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ITSolutionFramework</RootNamespace>
-    <AssemblyName>ITSolutionFramework</AssemblyName>
+    <RootNamespace>ITSolution.Framework.ServiceHost</RootNamespace>
+    <AssemblyName>ITSolution.Framework.ServiceHost</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

@@ -7,8 +7,8 @@
     <ProjectGuid>{4261D396-89DD-45A3-ADBE-93E49502B0DE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ITSolution.Reports</RootNamespace>
-    <AssemblyName>ITSolution.Reports</AssemblyName>
+    <RootNamespace>ITSolution.Framework.Reports</RootNamespace>
+    <AssemblyName>ITSolution.Framework.Reports</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>
@@ -382,7 +382,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Connected Services\ReportServer\ITSolution.Reports.ReportServer.ReportImage.datasource">
+    <None Include="Connected Services\ReportServer\ITSolution.Framework.Reports.ReportServer.ReportImage.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ReportServer\ReportContract.wsdl" />

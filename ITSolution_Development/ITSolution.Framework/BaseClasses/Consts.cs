@@ -17,4 +17,9 @@ namespace ITSolution.Framework.Common.BaseClasses
 
 
     }
+    public static class FrameworkVersionConsts
+    {
+        public const string FrameworkMajorVersion = "1.00.00.0000";
+        public const string FrameworkBuildVersion = "1.00.00.0001";
+    }
 }

@@ -7,8 +7,8 @@
     <ProjectGuid>{20FB03C3-EE36-4784-A4C4-BD1FBA716548}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ITSolution.Admin</RootNamespace>
-    <AssemblyName>ITSolution.Admin</AssemblyName>
+    <RootNamespace>ITSolution.Framework.Admin</RootNamespace>
+    <AssemblyName>ITSolution.Framework.Admin</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

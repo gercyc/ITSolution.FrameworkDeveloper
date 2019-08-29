@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ITSolution.Reports {
+namespace ITSolution.Framework.Reports {
     using System;
     
     
@@ -19,7 +19,7 @@ namespace ITSolution.Reports {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class XRDesignRibbonControllerResources {
@@ -39,7 +39,7 @@ namespace ITSolution.Reports {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ITSolution.Reports.XRDesignRibbonControllerResources", typeof(XRDesignRibbonControllerResources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ITSolution.Framework.Reports.XRDesignRibbonControllerResources", typeof(XRDesignRibbonControllerResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

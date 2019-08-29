@@ -240,7 +240,7 @@ namespace ITSolution.Admin.Forms.ContextUtil
             // barBtnCreateAppXml
             // 
             this.barBtnCreateAppXml.Caption = "Criar Conexão";
-            this.barBtnCreateAppXml.Glyph = global::ITSolution.Admin.Properties.Resources.ExtendedProperty;
+            this.barBtnCreateAppXml.Glyph = global::ITSolution.Framework.Admin.Properties.Resources.ExtendedProperty;
             this.barBtnCreateAppXml.Id = 20;
             this.barBtnCreateAppXml.Name = "barBtnCreateAppXml";
             this.barBtnCreateAppXml.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;

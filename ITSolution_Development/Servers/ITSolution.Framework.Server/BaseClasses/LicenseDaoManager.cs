@@ -1,4 +1,5 @@
 ﻿using ITSolution.Framework.BaseClasses.License.POCO;
+using ITSolution.Framework.BaseInterfaces;
 using ITSolution.Framework.Dao.Contexto;
 using ITSolution.Framework.Mensagem;
 using System;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ITSolution.Framework.BaseClasses.License
 {
-    public class LicenseDaoManager
+    public class LicenseDaoManager : ILicenseManager
     {
         public bool SaveOrUpdateLicense(ItsLicense license)
         {

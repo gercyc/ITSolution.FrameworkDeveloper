@@ -22,7 +22,7 @@ namespace ITSolution.Framework.Admin.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace ITSolution.Framework.Admin.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ITSolution.Framework.Admin.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace ITSolution.Framework.Admin.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace ITSolution.Framework.Admin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _event {
+        public static System.Drawing.Bitmap _event {
             get {
                 object obj = ResourceManager.GetObject("_event", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +73,7 @@ namespace ITSolution.Framework.Admin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] app_config_template {
+        public static byte[] app_config_template {
             get {
                 object obj = ResourceManager.GetObject("app_config_template", resourceCulture);
                 return ((byte[])(obj));
@@ -83,7 +83,7 @@ namespace ITSolution.Framework.Admin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap apply_16x16 {
+        public static System.Drawing.Bitmap apply_16x16 {
             get {
                 object obj = ResourceManager.GetObject("apply_16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -93,7 +93,7 @@ namespace ITSolution.Framework.Admin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] context_template {
+        public static byte[] context_template {
             get {
                 object obj = ResourceManager.GetObject("context_template", resourceCulture);
                 return ((byte[])(obj));
@@ -103,7 +103,7 @@ namespace ITSolution.Framework.Admin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] context2_template {
+        public static byte[] context2_template {
             get {
                 object obj = ResourceManager.GetObject("context2_template", resourceCulture);
                 return ((byte[])(obj));
@@ -113,7 +113,7 @@ namespace ITSolution.Framework.Admin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap database {
+        public static System.Drawing.Bitmap database {
             get {
                 object obj = ResourceManager.GetObject("database", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -123,7 +123,7 @@ namespace ITSolution.Framework.Admin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap database_locked {
+        public static System.Drawing.Bitmap database_locked {
             get {
                 object obj = ResourceManager.GetObject("database_locked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -133,7 +133,7 @@ namespace ITSolution.Framework.Admin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap DatabaseRole {
+        public static System.Drawing.Bitmap DatabaseRole {
             get {
                 object obj = ResourceManager.GetObject("DatabaseRole", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -143,7 +143,7 @@ namespace ITSolution.Framework.Admin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap DbLink {
+        public static System.Drawing.Bitmap DbLink {
             get {
                 object obj = ResourceManager.GetObject("DbLink", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -153,7 +153,7 @@ namespace ITSolution.Framework.Admin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ddltrigger {
+        public static System.Drawing.Bitmap ddltrigger {
             get {
                 object obj = ResourceManager.GetObject("ddltrigger", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -163,7 +163,7 @@ namespace ITSolution.Framework.Admin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap event16x16 {
+        public static System.Drawing.Bitmap event16x16 {
             get {
                 object obj = ResourceManager.GetObject("event16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -173,7 +173,7 @@ namespace ITSolution.Framework.Admin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ExtendedProperty {
+        public static System.Drawing.Bitmap ExtendedProperty {
             get {
                 object obj = ResourceManager.GetObject("ExtendedProperty", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -183,7 +183,7 @@ namespace ITSolution.Framework.Admin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap folder {
+        public static System.Drawing.Bitmap folder {
             get {
                 object obj = ResourceManager.GetObject("folder", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -193,7 +193,7 @@ namespace ITSolution.Framework.Admin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap its_front_side {
+        public static System.Drawing.Bitmap its_front_side {
             get {
                 object obj = ResourceManager.GetObject("its_front_side", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -203,7 +203,7 @@ namespace ITSolution.Framework.Admin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap its_logo {
+        public static System.Drawing.Bitmap its_logo {
             get {
                 object obj = ResourceManager.GetObject("its_logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -213,7 +213,7 @@ namespace ITSolution.Framework.Admin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap its_logo400x400 {
+        public static System.Drawing.Bitmap its_logo400x400 {
             get {
                 object obj = ResourceManager.GetObject("its_logo400x400", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -223,7 +223,7 @@ namespace ITSolution.Framework.Admin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon itsolution {
+        public static System.Drawing.Icon itsolution {
             get {
                 object obj = ResourceManager.GetObject("itsolution", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -233,7 +233,7 @@ namespace ITSolution.Framework.Admin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap table {
+        public static System.Drawing.Bitmap table {
             get {
                 object obj = ResourceManager.GetObject("table", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -243,7 +243,7 @@ namespace ITSolution.Framework.Admin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap user {
+        public static System.Drawing.Bitmap user {
             get {
                 object obj = ResourceManager.GetObject("user", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -253,7 +253,7 @@ namespace ITSolution.Framework.Admin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap xml {
+        public static System.Drawing.Bitmap xml {
             get {
                 object obj = ResourceManager.GetObject("xml", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -263,7 +263,7 @@ namespace ITSolution.Framework.Admin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap xmltable {
+        public static System.Drawing.Bitmap xmltable {
             get {
                 object obj = ResourceManager.GetObject("xmltable", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -273,7 +273,7 @@ namespace ITSolution.Framework.Admin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap xmltable16x16 {
+        public static System.Drawing.Bitmap xmltable16x16 {
             get {
                 object obj = ResourceManager.GetObject("xmltable16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));

@@ -35,7 +35,7 @@ namespace ITSolution.Framework.Entities
         [Display(Name = "CPF/CNPJ")]
         [StringLength(18, MinimumLength =0, ErrorMessage = "CNPJ deve conter entre 11 e 14 digítos")]
         //[Index("Cnpj", 1, IsUnique = true)]//Restrição UNIQUE
-        [Index("CpfCnpj", 0, IsUnique = false)]//Restrição UNIQUE cancelada
+        //[Index("CpfCnpj", 0, IsUnique = false)]//Restrição UNIQUE cancelada
         [JsonProperty("cnpj")]
         public string CpfCnpj { get; set; }
 

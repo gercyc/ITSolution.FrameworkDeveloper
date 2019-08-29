@@ -116,7 +116,7 @@
             // barBtnAppConfig
             // 
             this.barBtnAppConfig.Caption = "Configure Connection";
-            this.barBtnAppConfig.Glyph = global::ITSolution.Admin.Properties.Resources.ExtendedProperty;
+            this.barBtnAppConfig.Glyph = global::ITSolution.Framework.Admin.Properties.Resources.ExtendedProperty;
             this.barBtnAppConfig.Id = 1;
             this.barBtnAppConfig.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S));
             this.barBtnAppConfig.Name = "barBtnAppConfig";
@@ -174,7 +174,7 @@
             // barBtnLoadConfig
             // 
             this.barBtnLoadConfig.Caption = "Load XML";
-            this.barBtnLoadConfig.Glyph = global::ITSolution.Admin.Properties.Resources.xml;
+            this.barBtnLoadConfig.Glyph = global::ITSolution.Framework.Admin.Properties.Resources.xml;
             this.barBtnLoadConfig.Id = 6;
             this.barBtnLoadConfig.Name = "barBtnLoadConfig";
             this.barBtnLoadConfig.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
@@ -183,7 +183,7 @@
             // barBtnAddConnection
             // 
             this.barBtnAddConnection.Caption = "Add New Connection";
-            this.barBtnAddConnection.Glyph = global::ITSolution.Admin.Properties.Resources.xmltable;
+            this.barBtnAddConnection.Glyph = global::ITSolution.Framework.Admin.Properties.Resources.xmltable;
             this.barBtnAddConnection.Id = 8;
             this.barBtnAddConnection.Name = "barBtnAddConnection";
             this.barBtnAddConnection.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;

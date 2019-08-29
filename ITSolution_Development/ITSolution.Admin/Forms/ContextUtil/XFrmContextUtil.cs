@@ -359,11 +359,11 @@ namespace ITSolution.Admin.Forms.ContextUtil
                 byte[] bytesContext = null;
                 //string templatePath = Application.StartupPath + "\\template_context";
 
-                if (mode)
+                //if (mode)
                     //templatePath = Application.StartupPath + "\\template_context2";
-                    bytesContext = Properties.Resources.context2_template;
-                else
-                    bytesContext = Properties.Resources.context_template;
+                    //bytesContext = Framework.Properties.Resources.context2_template;
+                //else
+                    //bytesContext = Properties.Resources.context_template;
 
                 var template = FileManagerIts.GetDataFromBytes(bytesContext);
 

@@ -229,7 +229,7 @@
             // btnExecutar
             // 
             this.btnExecutar.Caption = "Execute";
-            this.btnExecutar.Glyph = global::ITSolution.Admin.Properties.Resources.event16x16;
+            this.btnExecutar.Glyph = global::ITSolution.Framework.Admin.Properties.Resources.event16x16;
             this.btnExecutar.Id = 0;
             this.btnExecutar.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.F5);
             this.btnExecutar.Name = "btnExecutar";
@@ -314,7 +314,7 @@
             // 
             // barEditQueryStatus
             // 
-            this.barEditQueryStatus.Glyph = global::ITSolution.Admin.Properties.Resources.apply_16x16;
+            this.barEditQueryStatus.Glyph = global::ITSolution.Framework.Admin.Properties.Resources.apply_16x16;
             this.barEditQueryStatus.Id = 15;
             this.barEditQueryStatus.Name = "barEditQueryStatus";
             this.barEditQueryStatus.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
@@ -352,9 +352,9 @@
             // barBtnCreateConnection
             // 
             this.barBtnCreateConnection.Caption = "barButtonItem2";
-            this.barBtnCreateConnection.Glyph = global::ITSolution.Admin.Properties.Resources.xmltable16x16;
+            this.barBtnCreateConnection.Glyph = global::ITSolution.Framework.Admin.Properties.Resources.xmltable16x16;
             this.barBtnCreateConnection.Id = 20;
-            this.barBtnCreateConnection.LargeGlyph = global::ITSolution.Admin.Properties.Resources.xmltable16x16;
+            this.barBtnCreateConnection.LargeGlyph = global::ITSolution.Framework.Admin.Properties.Resources.xmltable16x16;
             this.barBtnCreateConnection.Name = "barBtnCreateConnection";
             toolTipTitleItem5.Text = "Adiciona um nova conexão";
             superToolTip5.Items.Add(toolTipTitleItem5);

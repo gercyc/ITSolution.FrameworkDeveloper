@@ -20,6 +20,7 @@ using ITSolution.Framework.Dao.Contexto;
 using ITSolution.Framework.Entities;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using ITSolution.Framework.Common.BaseClasses.CommonEntities;
 
 namespace ITSolution.Admin.Forms.Util
 {
@@ -202,14 +203,5 @@ namespace ITSolution.Admin.Forms.Util
             dtStartDate.Text = "";
             dtEndDate.Text = "";
         }
-    }
-    [Serializable]
-    [Table("CliFor")]
-    internal class Customer : AbstractClient
-    {
-        [Key]//pk
-        [Column]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]//sera auto increment
-        public int IdCliFor { get; set; }
     }
 }

@@ -150,7 +150,6 @@
     <Compile Include="Enumeradores\TypeReport.cs" />
     <Compile Include="Enumeradores\TypeSituacaoCliente.cs" />
     <Compile Include="Enumeradores\TypeSkinTheme.cs" />
-    <Compile Include="Entities\AbstractClient.cs" />
     <Compile Include="Entities\Mensagem.cs" />
     <Compile Include="Entities\Parametro.cs" />
     <Compile Include="Entities\Telefone.cs" />
@@ -179,7 +178,6 @@
     <Compile Include="Util\RedeUtil.cs" />
     <Compile Include="Util\ReflectionIts.cs" />
     <Compile Include="Util\StringExtends.cs" />
-    <Compile Include="Enumeradores\TypeCliente.cs" />
     <Compile Include="Enumeradores\TypeConnectionFile.cs" />
     <Compile Include="Enumeradores\TypeOrientacao.cs" />
     <Compile Include="Enumeradores\TypePrinter.cs" />

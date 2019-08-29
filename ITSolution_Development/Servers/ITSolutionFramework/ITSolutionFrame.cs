@@ -38,7 +38,7 @@ namespace ITSolutionFramework
 
             gridControl1.DataSource = RemoteService.RegisterService.OnlineServers;
             taskIcon.Text = string.Format("Servidor iniciado, porta {0}", EnvironmentInformation.ServerPort);
-            taskIcon.Icon = Properties.Resources.server_go;
+            taskIcon.Icon = ITSolution.Framework.ServiceHost.Properties.Resources.server_go;
             Trace();
             this.Hide();
         }

@@ -92,11 +92,13 @@ namespace ITSolution.Framework.Dao.Contexto
         {
             get
             {
-                //Path.Combine("Config", ITSolution.Framework.Properties.Settings.Default.DefaultConnectionFile);
-                string xmlPath = Path.Combine(Application.StartupPath, "Config", ITSolution.Framework.Properties.Settings.Default.DefaultConnectionFile);
-                return xmlPath;
+                
+                    //string xmlPath = Path.Combine(Application.StartupPath, "Config", ITSolution.Framework.Properties.Settings.Default.DefaultConnectionFile);
+                    string xmlPath = Path.Combine(System.Web.HttpRuntime.AppDomainAppPath, "Config", ITSolution.Framework.Properties.Settings.Default.DefaultConnectionFile);
+                    return xmlPath;
             }
         }
+        
 
         #endregion 
 

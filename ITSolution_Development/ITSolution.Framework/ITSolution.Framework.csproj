@@ -90,6 +90,7 @@
     <Compile Include="Arquivos\XmlUtil.cs" />
     <Compile Include="Arquivos\ZipUtil.cs" />
     <Compile Include="BaseClasses\AppConfigManager.cs" />
+    <Compile Include="BaseClasses\AppConfigManagerWeb.cs" />
     <Compile Include="BaseClasses\Consts.cs" />
     <Compile Include="BaseClasses\DecodedAppConfig.cs" />
     <Compile Include="BaseClasses\EnvironmentInformation.cs" />
@@ -439,7 +440,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>PrintRibbonControllerResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>

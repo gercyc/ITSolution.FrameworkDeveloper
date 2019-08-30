@@ -36,7 +36,7 @@ namespace ITSolution.Framework.Dao.Contexto
         /// Construtor singleton
         /// </summary>
         /// 
-        private AppConfigManager()
+        protected AppConfigManager()
         {
             this.AppConfigList = new List<AppConfigIts>();
 
@@ -88,19 +88,17 @@ namespace ITSolution.Framework.Dao.Contexto
         /// O path do arquivo de configuração de conexão
         ///     Observação: O arquivo App.xml está localizado em ITSolution.Framework
         /// </summary>
-        public string ConnectionConfigPath
+        public virtual string ConnectionConfigPath
         {
             get
             {
-                
-                    //string xmlPath = Path.Combine(Application.StartupPath, "Config", ITSolution.Framework.Properties.Settings.Default.DefaultConnectionFile);
-                    string xmlPath = Path.Combine(System.Web.HttpRuntime.AppDomainAppPath, "Config", ITSolution.Framework.Properties.Settings.Default.DefaultConnectionFile);
-                    return xmlPath;
+                string xmlPath = Path.Combine(Application.StartupPath, "Config", ITSolution.Framework.Properties.Settings.Default.DefaultConnectionFile);
+                return xmlPath;
             }
         }
-        
 
-        #endregion 
+
+        #endregion
 
         #region Controle XML
 

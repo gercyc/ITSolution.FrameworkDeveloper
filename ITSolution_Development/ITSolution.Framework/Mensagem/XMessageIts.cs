@@ -84,7 +84,7 @@ namespace ITSolution.Framework.Mensagem
                 message = "null";
             }
             //sao iguais MessageBoxIcon.Exclamation);
-            MessageBox.Show(message.ToString(), TITLE, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show(message.ToString(), TITLE, MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
 
         }
 

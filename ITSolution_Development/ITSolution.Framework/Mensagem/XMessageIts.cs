@@ -225,10 +225,10 @@ namespace ITSolution.Framework.Mensagem
             string msg = ex.Message + "\n" + inner;
 
             if (message == null)
-                MessageBox.Show(msg, title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(msg, title, MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
             else
                 MessageBox.Show(message + " " + msg + "\n", title,
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
         }
 
         /// <summary>

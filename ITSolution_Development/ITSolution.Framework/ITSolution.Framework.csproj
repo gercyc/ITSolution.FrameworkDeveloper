@@ -90,7 +90,6 @@
     <Compile Include="Arquivos\XmlUtil.cs" />
     <Compile Include="Arquivos\ZipUtil.cs" />
     <Compile Include="BaseClasses\AppConfigManager.cs" />
-    <Compile Include="BaseClasses\AppConfigManagerWeb.cs" />
     <Compile Include="BaseClasses\Consts.cs" />
     <Compile Include="BaseClasses\DecodedAppConfig.cs" />
     <Compile Include="BaseClasses\EnvironmentInformation.cs" />

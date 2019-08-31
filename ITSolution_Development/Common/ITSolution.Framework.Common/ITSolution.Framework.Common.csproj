@@ -63,6 +63,7 @@
     <Compile Include="BaseClasses\CommonEntities\IndicadoresBacen.cs" />
     <Compile Include="BaseClasses\CommonEntities\ItsUser.cs" />
     <Compile Include="BaseClasses\CommonEntities\Moeda.cs" />
+    <Compile Include="BaseClasses\ITSApplicationType.cs" />
     <Compile Include="BaseClasses\ItsServerInfo.cs" />
     <Compile Include="BaseClasses\Reports\AbstractReportImage.cs" />
     <Compile Include="BaseClasses\Reports\DashboardImage.cs" />

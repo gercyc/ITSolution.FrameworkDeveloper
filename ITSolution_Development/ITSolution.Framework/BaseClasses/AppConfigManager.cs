@@ -8,6 +8,7 @@ using System.Collections;
 using System.Windows.Forms;
 using ITSolution.Framework.Mensagem;
 using ITSolution.Framework.Entities;
+using ITSolution.Framework.Common.BaseClasses;
 
 namespace ITSolution.Framework.Dao.Contexto
 {
@@ -92,7 +93,13 @@ namespace ITSolution.Framework.Dao.Contexto
         {
             get
             {
-                string xmlPath = Path.Combine(Application.StartupPath, "Config", ITSolution.Framework.Properties.Settings.Default.DefaultConnectionFile);
+                ITSApplicationType applicationType = (Application.ExecutablePath.Contains("w3wp")
+                    || Application.ExecutablePath.Contains("iisexpress")) ? ITSApplicationType.Web : ITSApplicationType.Desktop;
+
+                string startupPath = applicationType == ITSApplicationType.Desktop ?
+                    Application.StartupPath : System.Web.HttpRuntime.AppDomainAppPath;
+
+                string xmlPath = Path.Combine(startupPath, "Config", ITSolution.Framework.Properties.Settings.Default.DefaultConnectionFile);
                 return xmlPath;
             }
         }
@@ -106,7 +113,7 @@ namespace ITSolution.Framework.Dao.Contexto
         /// Initialize all class
         /// </summary>
         /// <param name="xmlFile"></param>
-        private void initialize(string xmlFile)
+        protected void initialize(string xmlFile)
         {
             XElement xml = XElement.Load(xmlFile);
 

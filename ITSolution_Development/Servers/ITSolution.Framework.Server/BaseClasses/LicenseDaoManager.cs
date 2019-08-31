@@ -1,5 +1,6 @@
 ﻿using ITSolution.Framework.BaseClasses.License.POCO;
 using ITSolution.Framework.BaseInterfaces;
+using ITSolution.Framework.Common.BaseClasses;
 using ITSolution.Framework.Dao.Contexto;
 using ITSolution.Framework.Mensagem;
 using System;
@@ -12,6 +13,13 @@ namespace ITSolution.Framework.BaseClasses.License
 {
     public class LicenseDaoManager : ILicenseManager
     {
+        ITSolutionContext context;
+
+        public LicenseDaoManager()
+        {
+            context = new ITSolutionContext();
+        }
+
         public bool SaveOrUpdateLicense(ItsLicense license)
         {
             var ctx = new ITSolutionContext();
@@ -34,9 +42,7 @@ namespace ITSolution.Framework.BaseClasses.License
         {
             try
             {
-                var ctx = new ITSolutionContext();
-
-                var lics = ctx.LicenseDao.FindAll();
+                var lics = context.LicenseDao.FindAll();
 
                 //busca licencas ativas e com datafim nula, se nao encontrou nenhuma dispara advertencia.
                 var licActive = lics.Where(
@@ -69,5 +75,6 @@ namespace ITSolution.Framework.BaseClasses.License
             }
 
         }
+
     }
 }

@@ -4,6 +4,8 @@ using ITSolution.Framework.Entities;
 using System.Data.Entity;
 using System.Data.Entity.SqlServer;
 using ITSolution.Framework.BaseClasses.License.POCO;
+using ITSolution.Framework.BaseClasses;
+using ITSolution.Framework.Common.BaseClasses;
 
 // Singletone
 namespace ITSolution.Framework.Dao.Contexto
@@ -26,8 +28,6 @@ namespace ITSolution.Framework.Dao.Contexto
     {
 
         #region Construtores
-
-
         public ITSolutionContext(string connectionStringOrDatabase)
             : base(connectionStringOrDatabase)
         {

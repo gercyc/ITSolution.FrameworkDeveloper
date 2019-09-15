@@ -50,6 +50,8 @@ namespace ITSolution.Framework.Core.BaseClasses
 
         public int ServerPort { get; set; }
         public string AsmRegisterServices { get; set; }
+        public string APIAssemblyFolder { get; set; }
+        public string CoreAssemblyFolder { get; set; }
 
         /// <summary>
         /// String de conexão lida da memória principal
@@ -94,7 +96,7 @@ namespace ITSolution.Framework.Core.BaseClasses
                     || AppDomain.CurrentDomain.FriendlyName.Contains("iisexpress")) ? ITSApplicationType.Web : ITSApplicationType.Desktop;
 
                 string startupPath = AppDomain.CurrentDomain.BaseDirectory;
-                string xmlPath = Path.Combine(startupPath, "Configuration", "ITSConfig");
+                string xmlPath = Path.Combine(startupPath, "Configuration", "ITSConfig.xml");
                 return xmlPath;
             }
         }
@@ -180,10 +182,18 @@ namespace ITSolution.Framework.Core.BaseClasses
                         int.TryParse(x.Attribute("name").Value, out port);
                         ServerPort = port;
                     }
-                    //porta do servidor de aplicacao
+                    //classe responsavel por iniciar os hosts WCF
                     else if (x.Name.LocalName.Equals("AssemblyRegisterServices"))
                     {
                         AsmRegisterServices = x.Attribute("name").Value.ToString();
+                    }
+                    else if (x.Name.LocalName.Equals("APIAssemblyFolder"))
+                    {
+                        APIAssemblyFolder = x.Attribute("name").Value.ToString();
+                    }
+                    else if (x.Name.LocalName.Equals("CoreAssemblyFolder"))
+                    {
+                        CoreAssemblyFolder = x.Attribute("name").Value.ToString();
                     }
                 }
                 catch (Exception ex)

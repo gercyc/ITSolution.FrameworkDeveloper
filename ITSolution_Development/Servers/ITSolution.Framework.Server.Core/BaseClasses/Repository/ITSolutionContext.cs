@@ -7,7 +7,12 @@ namespace ITSolution.Framework.Server.Core.BaseClasses.Repository
 {
     public class ITSolutionContext : ITSolutionDbContext
     {
-        public ITSolutionContext(DbContextOptions dbContextOptions): base(dbContextOptions)
+        public ITSDbContextOptions ITSDbContextOptions { get; set; }
+        public ITSolutionContext(ITSDbContextOptions dbContextOptions) : base(dbContextOptions.DbContextOptions)
+        {
+            this.ITSDbContextOptions = dbContextOptions;
+        }
+        public ITSolutionContext(DbContextOptions dbContextOptions) : base(dbContextOptions)
         {
 
         }

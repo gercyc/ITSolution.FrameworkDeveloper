@@ -1,0 +1,1 @@
+copy %1 "C:\ITSolution\Core\CoreAssemblies"

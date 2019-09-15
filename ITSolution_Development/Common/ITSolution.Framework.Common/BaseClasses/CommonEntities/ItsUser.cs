@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace ITSolution.Framework.Common.BaseClasses.CommonEntities
 {
+    [Table("Usuario")]
     public class ItsUser : AbstractUser
     {
         [Key]//pk

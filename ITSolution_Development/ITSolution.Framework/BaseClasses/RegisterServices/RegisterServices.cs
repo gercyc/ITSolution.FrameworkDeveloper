@@ -78,7 +78,8 @@ namespace ITSolution.Framework.BaseClasses.RegisterServices
                 AppDomain.CurrentDomain.Load(asmServer.GetName());
                 foreach (Type server in asmServer.GetTypes().Where(t =>
                 !t.IsDefined(typeof(System.Runtime.CompilerServices.CompilerGeneratedAttribute), false) &&
-                t.Attributes.HasFlag(TypeAttributes.Public | TypeAttributes.BeforeFieldInit)))
+                t.Attributes.HasFlag(TypeAttributes.Public | TypeAttributes.BeforeFieldInit)
+                && t.GetCustomAttribute(typeof(ITSolutionServerAttribute)) != null))
                 {
                     ItsServerInfo sinfo = new ItsServerInfo(server);
                     try

@@ -8,7 +8,7 @@ namespace ITSolution.Framework.Common.BaseClasses
 {
     public static class Consts
     {
-        public const string AssemblyServers = "ITSolution.ServiceFramework.BaseClasses.RegisterServices";
+        public const string AssemblyServers = "ITSolution.Framework.BaseClasses.RegisterServices.RegisterServices";
         public const string FrameworkServerClass = "ITSolution.Framework.Server.ITSFrameworkServerController.soap"; // /ITSFrameworkServer
         public const string FrameworkSchedulerClass = "ITSolution.Framework.Server.Scheduler.SchedulerController.soap"; // /ISchedulerControl
         public const string InternalFrameworkSession = "ITSINTERNALSESSION";

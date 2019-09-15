@@ -1,1 +1,1 @@
-copy %1 "C:\ITSolution\"
+copy %1 "C:\ITSolution\Framework"

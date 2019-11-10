@@ -2,7 +2,7 @@
 <configuration>
   <!-- Tipo de Conexão-->
   <serverType typeName="MSSQL" />
-  <defaultConnection name="Dev" />
+  <defaultConnection name="LocalDB" />
   <serverPort name ="9000"/>
   <AssemblyRegisterServices name ="ITSolution.Framework.BaseClasses.RegisterServices.RegisterServices"/>
   <connectionStrings>

@@ -2,11 +2,12 @@
 <configuration>
   <!-- Tipo de Conexão-->
   <serverType typeName="MSSQL" />
-  <defaultConnection name="Dev" />
+  <defaultConnection name="LocalDB" />
   <connectionStrings>
     <!--Azure Database to Developer-->
     <connection name="ITS" serverName="itsolution.database.windows.net" database="db_ITE" user="itsadmin" password="SXRzMTIzNCU=" security="false" />
     <!--Azure Database to Developer-->
     <connection name="Dev" serverName="(local)" database="dbBalcao_DEV" security="true" />
+    <connection name="LocalDB" serverName="(localdb)\MSSQLLocalDB" database="dbBalcao_DEV" security="true" />
   </connectionStrings>
 </configuration>

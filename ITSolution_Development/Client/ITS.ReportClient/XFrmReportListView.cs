@@ -5,6 +5,7 @@ using ITSolution.Framework.GuiUtil;
 using ITSolution.Framework.Mensagem;
 
 using System.ServiceModel;
+using DevExpress.XtraEditors;
 using DevExpress.XtraReports.UI;
 using ITSolution.Framework.Common.BaseClasses.Reports.Enumeradores;
 using ITSolution.Framework.Common.BaseClasses.Reports;
@@ -13,7 +14,7 @@ using ITSolution.Framework.Common.BaseClasses;
 
 namespace ITSolution.Framework.Client.Reports
 {
-    public partial class XFrmReportList : DevExpress.XtraEditors.XtraForm
+    public partial class XFrmReportList : XtraForm
     {
         IReportServer ReportServer
         {

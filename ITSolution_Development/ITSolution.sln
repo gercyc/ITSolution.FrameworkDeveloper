@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29215.179
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSolution.Framework", "ITSolution.Framework\ITSolution.Framework.csproj", "{A5A1A9BB-6C1B-4A0B-867B-E59132FC51B9}"
 EndProject
@@ -32,12 +32,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSolution.Framework.Server.ReportServer", "Servers\ITSolution.Framework.Server.ReportServer\ITSolution.Framework.Server.ReportServer.csproj", "{9BF50DF3-929F-4FFC-BF56-AA33FE61A390}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSolution.Framework.Client.Reports", "Client\ITS.ReportClient\ITSolution.Framework.Client.Reports.csproj", "{F79D5DC9-42C3-4B49-BCE1-F041BFF627A2}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{464CE5B0-85C1-40FD-A035-D9A16860930B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSolution.Framework.Web.Administrator", "Web\ITSolution.Framework.Web.Administrator\ITSolution.Framework.Web.Administrator.csproj", "{40357AEA-0A6C-41FA-8802-BBF4B3727EB9}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITSolution.Framework.Web.BusinessAPI", "Web\ITSolution.Framework.Web.BusinessAPI\ITSolution.Framework.Web.BusinessAPI.csproj", "{A74092E4-BDDF-4563-99EF-A02007DFD48D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2B21D459-11FF-4460-A52F-6A0C815F756B}"
 	ProjectSection(SolutionItems) = preProject
@@ -99,14 +93,6 @@ Global
 		{F79D5DC9-42C3-4B49-BCE1-F041BFF627A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F79D5DC9-42C3-4B49-BCE1-F041BFF627A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F79D5DC9-42C3-4B49-BCE1-F041BFF627A2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{40357AEA-0A6C-41FA-8802-BBF4B3727EB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{40357AEA-0A6C-41FA-8802-BBF4B3727EB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{40357AEA-0A6C-41FA-8802-BBF4B3727EB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{40357AEA-0A6C-41FA-8802-BBF4B3727EB9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A74092E4-BDDF-4563-99EF-A02007DFD48D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A74092E4-BDDF-4563-99EF-A02007DFD48D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A74092E4-BDDF-4563-99EF-A02007DFD48D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A74092E4-BDDF-4563-99EF-A02007DFD48D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B61AAE25-3FD3-4B22-9AB1-3410B4D237F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B61AAE25-3FD3-4B22-9AB1-3410B4D237F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B61AAE25-3FD3-4B22-9AB1-3410B4D237F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -127,8 +113,6 @@ Global
 		{EFAC283D-11A0-4254-94BE-C08AA045668F} = {82591721-0808-4018-8598-F4FC53243BDD}
 		{9BF50DF3-929F-4FFC-BF56-AA33FE61A390} = {82591721-0808-4018-8598-F4FC53243BDD}
 		{F79D5DC9-42C3-4B49-BCE1-F041BFF627A2} = {5764E592-9101-4C12-9FD2-DFC3F883EB9B}
-		{40357AEA-0A6C-41FA-8802-BBF4B3727EB9} = {464CE5B0-85C1-40FD-A035-D9A16860930B}
-		{A74092E4-BDDF-4563-99EF-A02007DFD48D} = {464CE5B0-85C1-40FD-A035-D9A16860930B}
 		{B61AAE25-3FD3-4B22-9AB1-3410B4D237F3} = {5764E592-9101-4C12-9FD2-DFC3F883EB9B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

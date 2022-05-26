@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
 using ITSolution.Framework.GuiUtil;
-using WebBrowser = DevExpress.XtraReports.Design.WebBrowser;
 
 namespace ITSolution.Framework.Beans.Forms
 {

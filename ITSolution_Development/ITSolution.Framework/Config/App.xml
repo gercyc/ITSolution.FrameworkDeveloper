@@ -2,14 +2,14 @@
 <configuration>
   <!-- Tipo de Conexão-->
   <serverType typeName="MSSQL" />
-  <defaultConnection name="LocalDB" />
+  <defaultConnection name="Dev" />
   <serverPort name ="9000"/>
   <AssemblyRegisterServices name ="ITSolution.Framework.BaseClasses.RegisterServices.RegisterServices"/>
   <connectionStrings>
     <!--Azure Database to Developer-->
     <connection name="ITS" serverName="itsolution.database.windows.net" database="db_ITE" user="itsadmin" password="SXRzMTIzNCU=" security="false" />
     <!--Azure Database to Developer-->
-    <connection name="Dev" serverName="(local)" database="dbBalcao_DEV" security="true" />
+    <connection name="Dev" serverName="(local)" database="itscorp_db" security="true" />
     <connection name="LocalDB" serverName="(localdb)\MSSQLLocalDB" database="dbBalcao_DEV" security="true" />
   </connectionStrings>
 </configuration>

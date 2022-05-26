@@ -1,5 +1,4 @@
-﻿using DevExpress.DashboardCommon.Viewer;
-using DevExpress.XtraEditors;
+﻿using DevExpress.XtraEditors;
 using DevExpress.XtraGrid;
 using DevExpress.XtraSplashScreen;
 using ITSolution.Framework.Arquivos;

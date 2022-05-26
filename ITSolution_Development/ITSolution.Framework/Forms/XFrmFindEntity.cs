@@ -10,7 +10,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.IO;
 using System.Linq;
-using System.Linq.Dynamic;
+using System.Linq.Dynamic.Core;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 

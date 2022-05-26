@@ -1,16 +1,13 @@
-﻿using System;
-using ITSolution.Framework.Util;
-using System.Threading;
-using ITSolution.Scheduler.EntidadesBd;
-using System.Collections.Generic;
-using ITSolution.Scheduler.Repositorio;
-using ITSolution.Framework.Mensagem;
-using System.Linq;
-using System.Windows.Forms;
-using ITSolution.Scheduler.Manager;
+﻿using ITSolution.Framework.Common.BaseClasses;
 using ITSolution.Framework.GuiUtil;
-using System.Linq.Dynamic;
-using ITSolution.Framework.Common.BaseClasses;
+using ITSolution.Framework.Mensagem;
+using ITSolution.Scheduler.Manager;
+using ITSolution.Scheduler.Repositorio;
+using System;
+using System.Linq;
+using System.Linq.Dynamic.Core;
+using System.Threading;
+using System.Windows.Forms;
 
 namespace ITSolution.Scheduler.Forms
 {
@@ -34,7 +31,7 @@ namespace ITSolution.Scheduler.Forms
                 this.control = control;
                 this.panelParams.Controls.Add(control);
                 this.panelParams.Controls[0].Dock = DockStyle.Fill;
-                var lst = cbProcesso.Properties.Items.Cast<ITSolution.Scheduler.EntidadesBd.ProcessIts>().Where("CodigoProcesso == @0", codProcesso).First();
+                var lst = cbProcesso.Properties.Items.Cast<ITSolution.Scheduler.EntidadesBd.ProcessIts>().AsQueryable().Where("CodigoProcesso == @0", codProcesso).First();
                 cbProcesso.SelectedItem = lst;
 
                 if (cbProcesso.SelectedItem != null) cbProcesso.ReadOnly = true;

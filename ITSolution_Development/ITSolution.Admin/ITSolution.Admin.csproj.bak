@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{20FB03C3-EE36-4784-A4C4-BD1FBA716548}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ITSolution.Admin</RootNamespace>
+    <AssemblyName>ITSolution.Admin</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>itsolution_black.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Images.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.1.UI, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.1.Wizard, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.1.Export, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.1.Extensions, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v17.1.Reporting.Extensions, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraWizard.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\ITE\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\ITE\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ITE.Entidades">
+      <HintPath>..\..\ITE_Development\ITE.Entidades\bin\Debug\ITE.Entidades.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AnalysisServices, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="ScintillaNET, Version=3.6.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\ITE\packages\jacobslusser.ScintillaNET.3.6.3\lib\net40\ScintillaNET.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entidades\DaoManager\AnexoPackageDaoManager.cs" />
+    <Compile Include="Entidades\DaoManager\LicenseDaoManager.cs" />
+    <Compile Include="Entidades\DaoManager\PackageDaoManager.cs" />
+    <Compile Include="Entidades\DaoManager\TypeStatusPackage.cs" />
+    <Compile Include="Entidades\DaoManager\UpdateInfoManager.cs" />
+    <Compile Include="Entidades\EntidadesBd\AnexoPackage.cs" />
+    <Compile Include="Entidades\EntidadesBd\PackageDTO.cs" />
+    <Compile Include="Entidades\EntidadesBd\Package.cs" />
+    <Compile Include="Entidades\EntidadesBd\UpdateInfo.cs" />
+    <Compile Include="Forms\Util\XFrmLicenseManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Util\XFrmLicenseManager.Designer.cs">
+      <DependentUpon>XFrmLicenseManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Launcher\AdminDTO.cs" />
+    <Compile Include="Enumeradores\TypeFlagTask.cs" />
+    <Compile Include="Enumeradores\TypeStatusPackage.cs" />
+    <Compile Include="Forms\ContextUtil\XFrmAppConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ContextUtil\XFrmAppConfig.Designer.cs">
+      <DependentUpon>XFrmAppConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ContextUtil\XFrmContextUtil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ContextUtil\XFrmContextUtil.Designer.cs">
+      <DependentUpon>XFrmContextUtil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ContextUtil\XFrmListViewDataBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ContextUtil\XFrmListViewDataBase.Designer.cs">
+      <DependentUpon>XFrmListViewDataBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ContextUtil\XFrmXmlCompare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ContextUtil\XFrmXmlCompare.Designer.cs">
+      <DependentUpon>XFrmXmlCompare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Repositorio\AdminContext.cs" />
+    <Compile Include="Forms\View\XFrmAddPackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\View\XFrmAddPackage.Designer.cs">
+      <DependentUpon>XFrmAddPackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Menu\XFrmAdminMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Menu\XFrmAdminMenu.Designer.cs">
+      <DependentUpon>XFrmAdminMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\TaskManager\TaskPackageManager.cs" />
+    <Compile Include="Entidades\TaskManager\TaskUpdateManager.cs" />
+    <Compile Include="Forms\Util\XFrmQueryEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Util\XFrmQueryEditor.designer.cs">
+      <DependentUpon>XFrmQueryEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Util\XFrmApplyPackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Util\XFrmApplyPackage.Designer.cs">
+      <DependentUpon>XFrmApplyPackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Util\XFrmClientUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Util\XFrmClientUpdate.Designer.cs">
+      <DependentUpon>XFrmClientUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListView\XFrmPackageManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListView\XFrmPackageManager.Designer.cs">
+      <DependentUpon>XFrmPackageManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListView\XFrmUpdateManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListView\XFrmUpdateManager.Designer.cs">
+      <DependentUpon>XFrmUpdateManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Launcher\Lancador.cs" />
+    <Compile Include="Launcher\AdminMenuUtil.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\RptPackageInfo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\RptPackageInfo.Designer.cs">
+      <DependentUpon>RptPackageInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="Forms\ContextUtil\XFrmAppConfig.resx">
+      <DependentUpon>XFrmAppConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ContextUtil\XFrmContextUtil.resx">
+      <DependentUpon>XFrmContextUtil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ContextUtil\XFrmListViewDataBase.resx">
+      <DependentUpon>XFrmListViewDataBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ContextUtil\XFrmXmlCompare.resx">
+      <DependentUpon>XFrmXmlCompare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Util\XFrmLicenseManager.resx">
+      <DependentUpon>XFrmLicenseManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\View\XFrmAddPackage.resx">
+      <DependentUpon>XFrmAddPackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Menu\XFrmAdminMenu.resx">
+      <DependentUpon>XFrmAdminMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Util\XFrmQueryEditor.resx">
+      <DependentUpon>XFrmQueryEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Util\XFrmApplyPackage.resx">
+      <DependentUpon>XFrmApplyPackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Util\XFrmClientUpdate.resx">
+      <DependentUpon>XFrmClientUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListView\XFrmPackageManager.resx">
+      <DependentUpon>XFrmPackageManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListView\XFrmUpdateManager.resx">
+      <DependentUpon>XFrmUpdateManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\RptPackageInfo.resx">
+      <DependentUpon>RptPackageInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Forms\ContextUtil\app_config_template" />
+    <None Include="Forms\ContextUtil\context_template" />
+    <None Include="Forms\ContextUtil\context2_template" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\ITE.Entidades.POCO.Base.ItsLicense.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.POCO.Base.ItsMenu.datasource" />
+    <None Include="Properties\DataSources\ITSolution.Admin.Entidades.EntidadesBd.AnexoPackage.datasource" />
+    <None Include="Properties\DataSources\ITSolution.Admin.Entidades.EntidadesBd.Package.datasource" />
+    <None Include="Properties\DataSources\ITSolution.Admin.Entidades.EntidadesBd.PkgUpdate.datasource" />
+    <None Include="Properties\DataSources\ITSolution.Framework.Entities.Anexo.datasource" />
+    <None Include="Properties\DataSources\ITSolution.Framework.Entities.Mensagem.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SQLs\bacen\Codigo Acesso BCB.xlsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\App.xml" />
+    <Content Include="itsolution_black.ico" />
+    <Content Include="Leiame.txt" />
+    <Content Include="SQLs\alter\jan-18\create_tables_its.sql" />
+    <Content Include="UpdatePackage\alter_table_produto.sql" />
+    <None Include="Resources\ide_32x32.png" />
+    <None Include="Resources\ide_16x16.png" />
+    <None Include="Resources\boproduct_32x32.png" />
+    <None Include="Resources\boproduct_16x16.png" />
+    <None Include="Resources\publish_32x32.png" />
+    <None Include="Resources\publish_16x16.png" />
+    <None Include="Resources\managedatasource_32x32.png" />
+    <None Include="Resources\managedatasource_16x16.png" />
+    <None Include="Resources\database.png" />
+    <None Include="Resources\database_locked.png" />
+    <None Include="Resources\DatabaseRole.png" />
+    <None Include="Resources\DbLink.png" />
+    <None Include="Resources\ddltrigger.png" />
+    <None Include="Resources\event.png" />
+    <None Include="Resources\ExtendedProperty.png" />
+    <None Include="Resources\folder.png" />
+    <None Include="Resources\table.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\xmltable.png" />
+    <None Include="Resources\event16x16.png" />
+    <None Include="Resources\xmltable16x16.png" />
+    <None Include="Resources\xml.ico" />
+    <Content Include="SQLs\alter\abril-17\alter.sql" />
+    <Content Include="SQLs\alter\jul-17\alter_07-7-2017.sql" />
+    <Content Include="SQLs\alter\jul-17\alter_14-7-2017.sql" />
+    <Content Include="SQLs\alter\jul-17\alter_20-7-2017.sql" />
+    <Content Include="SQLs\alter\jul-17\alter_18-7-2017.sql" />
+    <Content Include="SQLs\alter\jul-17\alter_17-7-2017.sql" />
+    <Content Include="SQLs\alter\jul-17\alter_29-7-2017_erro_pacote.sql" />
+    <Content Include="SQLs\alter\jul-17\parametros_15-7-2017.sql" />
+    <Content Include="SQLs\alter\jun-17\Alter-27-6-2017.sql" />
+    <Content Include="SQLs\alter\jun-17\tables_contabil_05-06-17.sql" />
+    <Content Include="SQLs\alter\jun-17\Alter-02-06-2017.sql" />
+    <Content Include="SQLs\alter\maio-17\AlterTableITE-27-5-17.sql" />
+    <Content Include="SQLs\alter\old\alter_table_26-3-2017.sql" />
+    <Content Include="SQLs\alter\old\alter_table_conta_bancaria.sql" />
+    <Content Include="SQLs\alter\old\alter_table_ite_21-2-2017.sql" />
+    <Content Include="SQLs\bacen\alter_table_bacen.sql" />
+    <EmbeddedResource Include="SQLs\procedures\financeiro\P_ATUALIZAR_LANCAMENTOS.sql" />
+    <EmbeddedResource Include="SQLs\procedures\venda\P_ATUALIZAR_VENDAS.sql" />
+    <EmbeddedResource Include="SQLs\procedures\reports\P_CENTRO_CUSTO_ANALITICO.sql" />
+    <EmbeddedResource Include="SQLs\procedures\financeiro\P_DELETAR_LANCAMENTO.sql" />
+    <EmbeddedResource Include="SQLs\procedures\venda\P_DELETAR_VENDA.sql" />
+    <EmbeddedResource Include="SQLs\procedures\controle\P_GET_INFO_MATRIZ_FILIAL.sql" />
+    <EmbeddedResource Include="SQLs\procedures\reports\P_ITE_RELAT001.sql" />
+    <EmbeddedResource Include="SQLs\procedures\reports\P_ITE_RELAT002.sql" />
+    <EmbeddedResource Include="SQLs\procedures\reports\P_ITE_RELAT003.sql" />
+    <EmbeddedResource Include="SQLs\procedures\reports\P_ITE_RELAT004.sql" />
+    <EmbeddedResource Include="SQLs\procedures\fiscal\P_ITSMOD9_ENTRADAS.sql" />
+    <EmbeddedResource Include="SQLs\procedures\fiscal\P_ITSMOD9_SAIDAS.sql" />
+    <EmbeddedResource Include="SQLs\procedures\financeiro\P_LANCAMENTOS_FINANCEIROS_FILTER.sql" />
+    <EmbeddedResource Include="SQLs\procedures\reports\P_TOTAIS_CENTRO_CUSTO.sql" />
+    <Content Include="SQLs\bordero\procedures\P_CAIXA_BRUTO_ANUAL.sql" />
+    <Content Include="SQLs\bordero\procedures\P_CAIXA_OPERACIONAL_ANUAL.sql" />
+    <Content Include="SQLs\bordero\functions\F_TOTAL_CENTRO_CUSTO.sql" />
+    <Content Include="SQLs\bordero\functions\F_TOTAL_CENTRO_CUSTO_PERIODO.sql" />
+    <Content Include="SQLs\bordero\functions\F_TOTAL_CENTRO_CUSTO_POR_ANO.sql" />
+    <Content Include="SQLs\bordero\functions\F_TOTAL_CENTRO_CUSTO_POR_MES.sql" />
+    <Content Include="SQLs\bordero\procedures\P_DESPESAS_OPERACIONAIS_ANUAL.sql" />
+    <Content Include="SQLs\util\F_DATAS.sql" />
+    <Content Include="SQLs\procedures\ardosia\P_DELETE_PRODUCAO_MES.sql" />
+    <Content Include="SQLs\procedures\ardosia\P_DELETE_PRODUCAO_MES_DIA_ANO.sql" />
+    <Content Include="SQLs\procedures\ardosia\P_PRODUCAO_MEDIA_SERRA_PERIODO.sql" />
+    <Content Include="SQLs\procedures\ardosia\P_PRODUCAO_SERRA_ANALITICO.sql" />
+    <Content Include="SQLs\procedures\ardosia\P_PRODUCAO_SERRA_ANALITICO_PERIODO.sql" />
+    <Content Include="SQLs\procedures\ardosia\P_PRODUCAO_SERRA_DATA.sql" />
+    <Content Include="SQLs\procedures\ardosia\P_PRODUCAO_SERRA_MES.sql" />
+    <Content Include="SQLs\procedures\ardosia\P_PRODUCAO_SERRA_MES_DIA.sql" />
+    <Content Include="SQLs\procedures\ardosia\P_PRODUCAO_SERRA_PERIODO.sql" />
+    <Content Include="SQLs\procedures\ardosia\P_TOTAIS_PRODUCAO_SERRA.sql" />
+    <Content Include="SQLs\procedures\financeiro\V_CONTAS_PAGAR.sql" />
+    <Content Include="SQLs\procedures\financeiro\V_CONTAS_RECEBER.sql" />
+    <Content Include="SQLs\procedures\reports\P_TOTAIS_CENTRO_CUSTO_DEV.sql" />
+    <Content Include="SQLs\util\F_RECOVER_IDENTITY.sql" />
+    <Content Include="SQLs\bordero\procedures\P_ANALISE_FLUXO_CAIXA_ANUAL.sql" />
+    <Content Include="SQLs\bordero\procedures\P_FLUXO_CAIXA_ABERTO.sql" />
+    <Content Include="SQLs\bordero\procedures\P_FLUXO_CAIXA_ANUAL.sql" />
+    <Content Include="SQLs\bordero\procedures\P_FLUXO_CAIXA_POR_PERIODO.sql" />
+    <Content Include="SQLs\procedures\venda\P_ITE_REPORT_VENDAS_POR_TIPO_PRODUTO.sql" />
+    <Content Include="SQLs\procedures\controle\P_UPDATE_LANCTO_BAIXA_EXTRATO_MOVIMENTO_CAIXA.sql" />
+    <Content Include="SQLs\triggers\iteTgrAtualizarEstoqueNotaFiscal.sql" />
+    <Content Include="SQLs\triggers\iteTgrAtualizarEstoqueVenda.sql" />
+    <Content Include="SQLs\triggers\iteTgrAtualizarStatusProduto.sql" />
+    <Content Include="SQLs\triggers\iteTgrAtualizarStatusVenda.sql" />
+    <Content Include="SQLs\util\atualizar_enderecos.sql" />
+    <Content Include="SQLs\util\cleanITE.sql" />
+    <Content Include="SQLs\util\cursor_example.sql" />
+    <Content Include="SQLs\util\delete_NF.sql" />
+    <Content Include="SQLs\util\generate_recovery_identity_new.sql" />
+    <Content Include="SQLs\util\generate_script_ite.sql" />
+    <Content Include="SQLs\util\gerar_transacoes.sql" />
+    <Content Include="SQLs\util\LoginUserSQL.sql" />
+    <Content Include="SQLs\util\newline_sql.sql" />
+    <Content Include="SQLs\util\P_SPLIT.sql" />
+    <Content Include="SQLs\util\Recovery password sa.txt" />
+    <Content Include="SQLs\util\recover_identity_tables.sql" />
+    <Content Include="SQLs\util\Rename PK FK INDEX_ITE.sql" />
+    <Content Include="SQLs\util\RESET_PK_FROM_TABLE.sql" />
+    <Content Include="SQLs\util\SQL_USER_ITS.sql" />
+    <Content Include="SQLs\util\util_sql.sql" />
+    <Content Include="SQLs\view\view_lancamento_financeiros.sql" />
+    <None Include="Resources\apply_16x16.png" />
+    <None Include="Resources\cancel_16x16.png" />
+    <None Include="Resources\itsolution.ico" />
+    <None Include="Resources\its_front_side.png" />
+    <None Include="Resources\its_logo.png" />
+    <None Include="Resources\its_logo400x400.jpg" />
+    <Content Include="SQLs\alter\old\alter_table_ite.sql" />
+    <Content Include="SQLs\util\sp_rename_pk_fk_index.sql" />
+    <Content Include="SQLs\util\sp_rename_tables_ite.sql" />
+    <Content Include="SQLs\bacen\codigo_moeda.txt" />
+    <Content Include="SQLs\bacen\COTACAO_DOLAR_2016-A-20-01-2017.sql" />
+    <Content Include="SQLs\bacen\COTACAO_EURO_2016-A-20-01-2017.sql" />
+    <Content Include="SQLs\bacen\INSERT_ITS_MOEDA_INTERNA_BACEN.sql" />
+    <Content Include="SQLs\DML\base_ite.sql" />
+    <Content Include="SQLs\DML\base_ite_teste.sql" />
+    <Content Include="SQLs\DML\cfops.sql" />
+    <Content Include="SQLs\DML\ITS_REPORT_GROUP.sql" />
+    <Content Include="SQLs\DML\ITS_REPORT_IMAGE.sql" />
+    <Content Include="SQLs\DML\municipio_uf.sql" />
+    <Content Include="SQLs\DML\ncms.sql" />
+    <Content Include="SQLs\DML\regras_fiscais.sql" />
+    <Content Include="SQLs\DML\skins_insert.sql" />
+    <Content Include="SQLs\functions\F_TOTAL_AVISTA.sql" />
+    <Content Include="SQLs\functions\F_TIPO_EXTRATO.sql" />
+    <Content Include="SQLs\alter\old\alter_table_admin.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ITE_Development\ITE.Components\ITE.Components.csproj">
+      <Project>{543944FF-D802-4960-92B6-A8FD3E5297DE}</Project>
+      <Name>ITE.Components</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\ITSolution.Framework.Common\ITSolution.Framework.Common.csproj">
+      <Project>{6228C23A-3C31-4F75-B4A4-E07F159A38A8}</Project>
+      <Name>ITSolution.Framework.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ITSolution.Framework\ITSolution.Framework.csproj">
+      <Project>{a5a1a9bb-6c1b-4a0b-867b-e59132fc51b9}</Project>
+      <Name>ITSolution.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ITSolution.Reports\ITSolution.Reports.csproj">
+      <Project>{4261d396-89dd-45a3-adbe-93e49502b0de}</Project>
+      <Name>ITSolution.Reports</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

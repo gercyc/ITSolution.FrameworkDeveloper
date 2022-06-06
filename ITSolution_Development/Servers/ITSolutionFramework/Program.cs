@@ -25,6 +25,7 @@ namespace ITSolutionFramework
             AppDomain.CurrentDomain.AssemblyLoad += new AssemblyLoadEventHandler(CurrentDomain_AssemblyLoad);
             AppDomain.CurrentDomain.TypeResolve += new ResolveEventHandler( CurrentDomain_TypeResolve);
             AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
+            
             //Application.Run(new ITSolutionFrame());
             TraceClass traceClass = new TraceClass();
             var app = new ITSolutionFrame();
@@ -36,7 +37,7 @@ namespace ITSolutionFramework
 
         private static void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
         {
-            XMessageIts.ExceptionMessage((Exception)e.ExceptionObject);
+            XMessageIts.ExceptionMessage((Exception)e.ExceptionObject);            
         }
 
         private static System.Reflection.Assembly CurrentDomain_TypeResolve(object sender, ResolveEventArgs args)

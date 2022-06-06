@@ -33,7 +33,7 @@ namespace ITSolution.Admin.Repositorio
         public AdminContext()
             : base(AppConfigManager.Configuration.AppConfig.ConnectionString)
         {
-
+            Database.SetInitializer<AdminContext>(null);
         }
 
         #endregion Fim dos construtores

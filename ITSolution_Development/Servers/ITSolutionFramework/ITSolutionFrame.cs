@@ -1,14 +1,14 @@
 ﻿using ITSolution.Framework.BaseClasses;
 using ITSolution.Framework.BaseClasses.Trace;
 using ITSolution.Framework.Common.BaseClasses;
-using ITSolution.Scheduler.Forms;
-using ITSolution.ServiceFramework.BaseClasses;
+using ITSolution.Framework.Mensagem;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -27,21 +27,35 @@ namespace ITSolutionFramework
         public delegate void ServiceTraceHandle(string _sessionID, TraceClass msg);
         private void Form1_Load(object sender, EventArgs e)
         {
-
-            taskIcon.Text = "Iniciando serviços...";
-            ThreadStart thServices = () =>
+            try
             {
-                RemoteService.RegisterService.StartFrameworkServices();
-                RemoteService.RegisterService.StartApplicationServices();
-            };
+                taskIcon.Text = "Iniciando serviços...";
+                ThreadStart thServices = () =>
+                {
+                    RemoteService.RegisterService.StartFrameworkServices();
+                    RemoteService.RegisterService.StartApplicationServices();
+                };
 
-            thServices.Invoke();
+                thServices.Invoke();
 
-            gridControl1.DataSource = RemoteService.RegisterService.OnlineServers;
-            taskIcon.Text = string.Format("Servidor iniciado, porta {0}", EnvironmentInformation.ServerPort);
-            taskIcon.Icon = Properties.Resources.server_go;
-            Trace();
-            this.Hide();
+                gridControl1.DataSource = RemoteService.RegisterService.OnlineServers;
+                taskIcon.Text = string.Format("Servidor iniciado, porta {0}", EnvironmentInformation.ServerPort);
+                taskIcon.Icon = ITSolution.Framework.ServiceHost.Properties.Resources.server_go;
+                Trace();
+                this.Hide();
+            }
+            catch (ReflectionTypeLoadException loaderEx)
+            {
+                MessageBoxException.ShowException("Erro ao carregar assemblies.", loaderEx);
+                Application.Exit();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBoxException.ShowException("Erro não identificado", ex);
+                Application.Exit();
+            }
+
         }
 
         private void simpleButton1_Click(object sender, EventArgs e)

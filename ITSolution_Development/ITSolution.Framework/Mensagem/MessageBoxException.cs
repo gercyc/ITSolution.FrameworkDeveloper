@@ -1,5 +1,6 @@
 ﻿using ITSolution.Framework.GuiUtil;
 using System;
+using System.Reflection;
 
 namespace ITSolution.Framework.Mensagem
 {
@@ -18,7 +19,20 @@ namespace ITSolution.Framework.Mensagem
                 messageBoxException.Text = title;
 
             messageBoxException.lblMsg.Text = messagem;
-            messageBoxException.txtException.Text = exception.Message;
+            messageBoxException.txtException.Text = exception.Message + Environment.NewLine;
+
+            if(exception is ReflectionTypeLoadException)
+            {
+                ReflectionTypeLoadException loadException = ((ReflectionTypeLoadException)exception);
+                if (loadException.LoaderExceptions != null)
+                {
+                    foreach (var item in loadException.LoaderExceptions)
+                    {
+                        messageBoxException.txtException.Text += item.Message + Environment.NewLine;
+                    }
+                }
+            }
+
             if (exception.InnerException != null)
                 messageBoxException.txtInner.Text = exception.InnerException.Message
                     + "\n" + exception.InnerException.StackTrace;

@@ -41,6 +41,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>resources\ide_32x32.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -85,6 +91,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="app.manifest" />
     <None Include="Properties\DataSources\ITSolution.Framework.Common.BaseClasses.ItsServerInfo.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -100,6 +107,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Client\ITSolution.Windows.Forms\ITSolution.Framework.Windows.Forms.csproj">
+      <Project>{b61aae25-3fd3-4b22-9ab1-3410b4d237f3}</Project>
+      <Name>ITSolution.Framework.Windows.Forms</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Common\ITSolution.Framework.Common\ITSolution.Framework.Common.csproj">
       <Project>{6228c23a-3c31-4f75-b4a4-e07f159a38a8}</Project>
       <Name>ITSolution.Framework.Common</Name>
@@ -108,17 +119,17 @@
       <Project>{A5A1A9BB-6C1B-4A0B-867B-E59132FC51B9}</Project>
       <Name>ITSolution.Framework</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\ITSolution.ServiceFramework\ITSolution.Framework.ServiceFramework.csproj">
-      <Project>{563E79B7-92C9-48F3-9AA2-FAAB8F3CBD5F}</Project>
-      <Name>ITSolution.Framework.ServiceFramework</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="resources\ide_32x32.ico" />
     <Content Include="resources\server_connect.ico" />
     <Content Include="resources\server_go.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>$(SolutionDir)Copy_Output_Files_Framework.bat $(TargetPath)</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>$(SolutionDir)Copy_Output_Files_Framework.bat $(TargetDir)\EntityFramework.dll</PreBuildEvent>
   </PropertyGroup>
 </Project>

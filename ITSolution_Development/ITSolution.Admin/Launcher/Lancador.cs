@@ -10,7 +10,7 @@ namespace ITSolution.Admin.Launcher
         [STAThread]
         static void Main()
         {
-            new AdminMenuUtil().Run("1");
+            new AdminMenuUtil().Run();
         }
     }
 

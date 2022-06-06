@@ -230,8 +230,8 @@ namespace ITSolution.Admin.Launcher
             {
                 string msg = "Ocorreu um erro não identificado ao realizar login.";
                 LoggerUtilIts.GenerateLogs(ex, msg);
-                Environment.Exit(0);
-                Application.Exit();
+                //Environment.Exit(0);
+                //Application.Exit();
                 throw ex;
             }
 

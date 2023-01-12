@@ -2,6 +2,8 @@
 using ITSolution.Framework.BaseClasses.Trace;
 using ITSolution.Framework.Common.BaseClasses;
 using ITSolution.Framework.Mensagem;
+using ITSolution.Scheduler.Forms;
+using ITSolution.ServiceFramework.BaseClasses;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -40,7 +42,7 @@ namespace ITSolutionFramework
 
                 gridControl1.DataSource = RemoteService.RegisterService.OnlineServers;
                 taskIcon.Text = string.Format("Servidor iniciado, porta {0}", EnvironmentInformation.ServerPort);
-                taskIcon.Icon = ITSolution.Framework.ServiceHost.Properties.Resources.server_go;
+                taskIcon.Icon = ITSolutionFramework.Properties.Resources.server_go;
                 Trace();
                 this.Hide();
             }

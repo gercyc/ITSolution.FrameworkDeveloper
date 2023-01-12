@@ -128,7 +128,7 @@ namespace ITSolution.Admin.Launcher
             //aqui eu ja tenho contexto iniciado
 
             //traz um usuario indexado do banco + login no servidor
-            AdminDTO admin = new AdminDTO(logon, senha, _application.ITSTools.Login(logon, senha));
+            AdminDTO admin = new AdminDTO(logon, senha, true);
 
             
 
